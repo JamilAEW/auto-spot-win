@@ -1,25 +1,34 @@
-import { createFileRoute } from "@tanstack/react-router";
-import { buildSeo } from "@/lib/seo";
-import { SITE } from "@/lib/site";
+import { createFileRoute, notFound } from "@tanstack/react-router";
+import { buildSeo, ldScript, faqJsonLd, serviceJsonLd, breadcrumbJsonLd } from "@/lib/seo";
+import { findModel } from "@/lib/models";
+import { ModelPage, modelFaqs } from "@/components/ModelPage";
+
+const SLUG = "citroen-c4-cactus-puretech-madrid";
 
 export const Route = createFileRoute("/citroen-c4-cactus-puretech-madrid")({
-  head: () =>
-    buildSeo({
-      title: `Citroën C4 Cactus PureTech Madrid | ${SITE.name} Madrid`,
-      description: `Cambio correa Citroën C4 Cactus PureTech en Madrid. Entrega el mismo día.`,
-      path: "/citroen-c4-cactus-puretech-madrid",
-    }),
-  component: CitroenC4CactusPage,
+  head: () => {
+    const m = findModel(SLUG)!;
+    const faqs = modelFaqs(m);
+    return {
+      ...buildSeo({
+        title: "Cambio Correa C4 Cactus PureTech Madrid | 399 € | StopCars",
+        description: "Taller especialista en Citroën C4 Cactus PureTech 1.2 en Madrid. Cambio de correa de distribución sumergida con kit Dayco reforzado por 399 € con IVA y mano de obra. Garantía 12 meses. Entrega el mismo día.",
+        path: `/${SLUG}`,
+      }),
+      scripts: [
+        ldScript(faqJsonLd(faqs)),
+        ldScript(serviceJsonLd(`Cambio Correa Distribución ${m.brand} ${m.model}`, `Cambio de correa sumergida en ${m.brand} ${m.model} con motor ${m.engine} en Madrid.`, "399")),
+        ldScript(breadcrumbJsonLd([
+          { name: "Inicio", path: "/" },
+          { name: "Motor PureTech", path: "/motor-puretech" },
+          { name: `${m.brand} ${m.model}`, path: `/${SLUG}` },
+        ])),
+      ],
+    };
+  },
+  component: () => {
+    const m = findModel(SLUG);
+    if (!m) throw notFound();
+    return <ModelPage model={m} />;
+  },
 });
-
-function CitroenC4CactusPage() {
-  return (
-    <div className="mx-auto max-w-3xl px-4 py-20 md:px-6">
-      <p className="font-display text-xs font-bold uppercase tracking-[0.2em] text-primary">En construcción</p>
-      <h1 className="mt-3 font-display text-4xl font-black md:text-5xl">Citroën C4 Cactus PureTech Madrid</h1>
-      <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-        Esta página formará parte de la web StopCars Madrid. Estamos preparando contenido completo. Mientras tanto, contacta con nosotros para tu presupuesto.
-      </p>
-    </div>
-  );
-}
