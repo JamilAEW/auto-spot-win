@@ -20,9 +20,10 @@ export const SITE = {
   whatsappMsg:
     "Hola%2C%20quiero%20información%20sobre%20la%20correa%20de%20distribución",
   email: "info@stopcarsmadrid.es",
-  address: "Calle Ejemplo 123",
-  postalCode: "28001",
-  geo: { lat: 40.41831, lng: -3.70275 },
+  address: "C. de Ferroviarios, 57",
+  district: "Usera",
+  postalCode: "28026",
+  geo: { lat: 40.38395, lng: -3.70554 },
   hours: {
     weekdays: "Lunes a Viernes 8:30 – 19:00",
     saturday: "Sábado 9:00 – 14:00",
