@@ -46,7 +46,7 @@ export function Footer() {
             <ul className="space-y-1 text-sm">
               {modelLinks.map((m) => (
                 <li key={m.slug}>
-                  <Link to={`/${m.slug}`} className="text-foreground/70 hover:text-primary">
+                  <Link to={`/${m.slug}` as string} className="text-foreground/70 hover:text-primary">
                     {m.brand} {m.model}
                   </Link>
                 </li>
@@ -60,7 +60,7 @@ export function Footer() {
             <ul className="space-y-3 text-sm">
               {posts.map((p) => (
                 <li key={p.slug}>
-                  <Link to={`/blog/${p.slug}`} className="text-foreground/80 hover:text-primary">
+                  <Link to={`/blog/${p.slug}` as string} className="text-foreground/80 hover:text-primary">
                     {p.title}
                   </Link>
                 </li>
