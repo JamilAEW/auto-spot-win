@@ -9,38 +9,724 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as SobreNosotrosRouteImport } from './routes/sobre-nosotros'
+import { Route as RecogidaEntregaRouteImport } from './routes/recogida-entrega'
+import { Route as PreciosRouteImport } from './routes/precios'
+import { Route as PoliticaPrivacidadRouteImport } from './routes/politica-privacidad'
+import { Route as PoliticaCookiesRouteImport } from './routes/politica-cookies'
+import { Route as Peugeot308PuretechMadridRouteImport } from './routes/peugeot-308-puretech-madrid'
+import { Route as Peugeot3008PuretechMadridRouteImport } from './routes/peugeot-3008-puretech-madrid'
+import { Route as Peugeot208PuretechMadridRouteImport } from './routes/peugeot-208-puretech-madrid'
+import { Route as Peugeot2008PuretechMadridRouteImport } from './routes/peugeot-2008-puretech-madrid'
+import { Route as OpelGrandlandPuretechMadridRouteImport } from './routes/opel-grandland-puretech-madrid'
+import { Route as OpelCorsaPuretechMadridRouteImport } from './routes/opel-corsa-puretech-madrid'
+import { Route as MotorPuretechRouteImport } from './routes/motor-puretech'
+import { Route as MotorEcoboostRouteImport } from './routes/motor-ecoboost'
+import { Route as GarantiaRouteImport } from './routes/garantia'
+import { Route as FordFocusEcoboostMadridRouteImport } from './routes/ford-focus-ecoboost-madrid'
+import { Route as FordFiestaEcoboostMadridRouteImport } from './routes/ford-fiesta-ecoboost-madrid'
+import { Route as FordEcosportEcoboostMadridRouteImport } from './routes/ford-ecosport-ecoboost-madrid'
+import { Route as Ds7PuretechMadridRouteImport } from './routes/ds7-puretech-madrid'
+import { Route as Ds3PuretechMadridRouteImport } from './routes/ds3-puretech-madrid'
+import { Route as CorreaDistribucionSumergidaRouteImport } from './routes/correa-distribucion-sumergida'
+import { Route as CorreaBanoAceiteRouteImport } from './routes/correa-bano-aceite'
+import { Route as ContactoRouteImport } from './routes/contacto'
+import { Route as CitroenC4PuretechMadridRouteImport } from './routes/citroen-c4-puretech-madrid'
+import { Route as CitroenC4CactusPuretechMadridRouteImport } from './routes/citroen-c4-cactus-puretech-madrid'
+import { Route as CitroenC3PuretechMadridRouteImport } from './routes/citroen-c3-puretech-madrid'
+import { Route as AvisoLegalRouteImport } from './routes/aviso-legal'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as BlogIndexRouteImport } from './routes/blog/index'
+import { Route as BlogTraqueteoArranquePuretechRouteImport } from './routes/blog/traqueteo-arranque-puretech'
+import { Route as BlogSintomasCorreaPuretechRouteImport } from './routes/blog/sintomas-correa-puretech'
+import { Route as BlogProblemaCorreaPuretechRouteImport } from './routes/blog/problema-correa-puretech'
+import { Route as BlogPrecioCorreaPuretech2025RouteImport } from './routes/blog/precio-correa-puretech-2025'
+import { Route as BlogModelosAfectadosPuretechRouteImport } from './routes/blog/modelos-afectados-puretech'
+import { Route as BlogGarantiaStellantisPuretechRouteImport } from './routes/blog/garantia-stellantis-puretech'
+import { Route as BlogEcoboostCorreaHumedaRouteImport } from './routes/blog/ecoboost-correa-humeda'
+import { Route as BlogDiferenciaCorreaCadenaRouteImport } from './routes/blog/diferencia-correa-cadena'
+import { Route as BlogCuandoCambiarCorreaPuretechRouteImport } from './routes/blog/cuando-cambiar-correa-puretech'
+import { Route as BlogConsumoAceitePuretechRouteImport } from './routes/blog/consumo-aceite-puretech'
 
+const SobreNosotrosRoute = SobreNosotrosRouteImport.update({
+  id: '/sobre-nosotros',
+  path: '/sobre-nosotros',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RecogidaEntregaRoute = RecogidaEntregaRouteImport.update({
+  id: '/recogida-entrega',
+  path: '/recogida-entrega',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PreciosRoute = PreciosRouteImport.update({
+  id: '/precios',
+  path: '/precios',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PoliticaPrivacidadRoute = PoliticaPrivacidadRouteImport.update({
+  id: '/politica-privacidad',
+  path: '/politica-privacidad',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PoliticaCookiesRoute = PoliticaCookiesRouteImport.update({
+  id: '/politica-cookies',
+  path: '/politica-cookies',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const Peugeot308PuretechMadridRoute =
+  Peugeot308PuretechMadridRouteImport.update({
+    id: '/peugeot-308-puretech-madrid',
+    path: '/peugeot-308-puretech-madrid',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const Peugeot3008PuretechMadridRoute =
+  Peugeot3008PuretechMadridRouteImport.update({
+    id: '/peugeot-3008-puretech-madrid',
+    path: '/peugeot-3008-puretech-madrid',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const Peugeot208PuretechMadridRoute =
+  Peugeot208PuretechMadridRouteImport.update({
+    id: '/peugeot-208-puretech-madrid',
+    path: '/peugeot-208-puretech-madrid',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const Peugeot2008PuretechMadridRoute =
+  Peugeot2008PuretechMadridRouteImport.update({
+    id: '/peugeot-2008-puretech-madrid',
+    path: '/peugeot-2008-puretech-madrid',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const OpelGrandlandPuretechMadridRoute =
+  OpelGrandlandPuretechMadridRouteImport.update({
+    id: '/opel-grandland-puretech-madrid',
+    path: '/opel-grandland-puretech-madrid',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const OpelCorsaPuretechMadridRoute = OpelCorsaPuretechMadridRouteImport.update({
+  id: '/opel-corsa-puretech-madrid',
+  path: '/opel-corsa-puretech-madrid',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MotorPuretechRoute = MotorPuretechRouteImport.update({
+  id: '/motor-puretech',
+  path: '/motor-puretech',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MotorEcoboostRoute = MotorEcoboostRouteImport.update({
+  id: '/motor-ecoboost',
+  path: '/motor-ecoboost',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GarantiaRoute = GarantiaRouteImport.update({
+  id: '/garantia',
+  path: '/garantia',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FordFocusEcoboostMadridRoute = FordFocusEcoboostMadridRouteImport.update({
+  id: '/ford-focus-ecoboost-madrid',
+  path: '/ford-focus-ecoboost-madrid',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FordFiestaEcoboostMadridRoute =
+  FordFiestaEcoboostMadridRouteImport.update({
+    id: '/ford-fiesta-ecoboost-madrid',
+    path: '/ford-fiesta-ecoboost-madrid',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const FordEcosportEcoboostMadridRoute =
+  FordEcosportEcoboostMadridRouteImport.update({
+    id: '/ford-ecosport-ecoboost-madrid',
+    path: '/ford-ecosport-ecoboost-madrid',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const Ds7PuretechMadridRoute = Ds7PuretechMadridRouteImport.update({
+  id: '/ds7-puretech-madrid',
+  path: '/ds7-puretech-madrid',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const Ds3PuretechMadridRoute = Ds3PuretechMadridRouteImport.update({
+  id: '/ds3-puretech-madrid',
+  path: '/ds3-puretech-madrid',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CorreaDistribucionSumergidaRoute =
+  CorreaDistribucionSumergidaRouteImport.update({
+    id: '/correa-distribucion-sumergida',
+    path: '/correa-distribucion-sumergida',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const CorreaBanoAceiteRoute = CorreaBanoAceiteRouteImport.update({
+  id: '/correa-bano-aceite',
+  path: '/correa-bano-aceite',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactoRoute = ContactoRouteImport.update({
+  id: '/contacto',
+  path: '/contacto',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CitroenC4PuretechMadridRoute = CitroenC4PuretechMadridRouteImport.update({
+  id: '/citroen-c4-puretech-madrid',
+  path: '/citroen-c4-puretech-madrid',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CitroenC4CactusPuretechMadridRoute =
+  CitroenC4CactusPuretechMadridRouteImport.update({
+    id: '/citroen-c4-cactus-puretech-madrid',
+    path: '/citroen-c4-cactus-puretech-madrid',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const CitroenC3PuretechMadridRoute = CitroenC3PuretechMadridRouteImport.update({
+  id: '/citroen-c3-puretech-madrid',
+  path: '/citroen-c3-puretech-madrid',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AvisoLegalRoute = AvisoLegalRouteImport.update({
+  id: '/aviso-legal',
+  path: '/aviso-legal',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BlogIndexRoute = BlogIndexRouteImport.update({
+  id: '/blog/',
+  path: '/blog/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlogTraqueteoArranquePuretechRoute =
+  BlogTraqueteoArranquePuretechRouteImport.update({
+    id: '/blog/traqueteo-arranque-puretech',
+    path: '/blog/traqueteo-arranque-puretech',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogSintomasCorreaPuretechRoute =
+  BlogSintomasCorreaPuretechRouteImport.update({
+    id: '/blog/sintomas-correa-puretech',
+    path: '/blog/sintomas-correa-puretech',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogProblemaCorreaPuretechRoute =
+  BlogProblemaCorreaPuretechRouteImport.update({
+    id: '/blog/problema-correa-puretech',
+    path: '/blog/problema-correa-puretech',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogPrecioCorreaPuretech2025Route =
+  BlogPrecioCorreaPuretech2025RouteImport.update({
+    id: '/blog/precio-correa-puretech-2025',
+    path: '/blog/precio-correa-puretech-2025',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogModelosAfectadosPuretechRoute =
+  BlogModelosAfectadosPuretechRouteImport.update({
+    id: '/blog/modelos-afectados-puretech',
+    path: '/blog/modelos-afectados-puretech',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogGarantiaStellantisPuretechRoute =
+  BlogGarantiaStellantisPuretechRouteImport.update({
+    id: '/blog/garantia-stellantis-puretech',
+    path: '/blog/garantia-stellantis-puretech',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogEcoboostCorreaHumedaRoute =
+  BlogEcoboostCorreaHumedaRouteImport.update({
+    id: '/blog/ecoboost-correa-humeda',
+    path: '/blog/ecoboost-correa-humeda',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogDiferenciaCorreaCadenaRoute =
+  BlogDiferenciaCorreaCadenaRouteImport.update({
+    id: '/blog/diferencia-correa-cadena',
+    path: '/blog/diferencia-correa-cadena',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogCuandoCambiarCorreaPuretechRoute =
+  BlogCuandoCambiarCorreaPuretechRouteImport.update({
+    id: '/blog/cuando-cambiar-correa-puretech',
+    path: '/blog/cuando-cambiar-correa-puretech',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogConsumoAceitePuretechRoute =
+  BlogConsumoAceitePuretechRouteImport.update({
+    id: '/blog/consumo-aceite-puretech',
+    path: '/blog/consumo-aceite-puretech',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/aviso-legal': typeof AvisoLegalRoute
+  '/citroen-c3-puretech-madrid': typeof CitroenC3PuretechMadridRoute
+  '/citroen-c4-cactus-puretech-madrid': typeof CitroenC4CactusPuretechMadridRoute
+  '/citroen-c4-puretech-madrid': typeof CitroenC4PuretechMadridRoute
+  '/contacto': typeof ContactoRoute
+  '/correa-bano-aceite': typeof CorreaBanoAceiteRoute
+  '/correa-distribucion-sumergida': typeof CorreaDistribucionSumergidaRoute
+  '/ds3-puretech-madrid': typeof Ds3PuretechMadridRoute
+  '/ds7-puretech-madrid': typeof Ds7PuretechMadridRoute
+  '/ford-ecosport-ecoboost-madrid': typeof FordEcosportEcoboostMadridRoute
+  '/ford-fiesta-ecoboost-madrid': typeof FordFiestaEcoboostMadridRoute
+  '/ford-focus-ecoboost-madrid': typeof FordFocusEcoboostMadridRoute
+  '/garantia': typeof GarantiaRoute
+  '/motor-ecoboost': typeof MotorEcoboostRoute
+  '/motor-puretech': typeof MotorPuretechRoute
+  '/opel-corsa-puretech-madrid': typeof OpelCorsaPuretechMadridRoute
+  '/opel-grandland-puretech-madrid': typeof OpelGrandlandPuretechMadridRoute
+  '/peugeot-2008-puretech-madrid': typeof Peugeot2008PuretechMadridRoute
+  '/peugeot-208-puretech-madrid': typeof Peugeot208PuretechMadridRoute
+  '/peugeot-3008-puretech-madrid': typeof Peugeot3008PuretechMadridRoute
+  '/peugeot-308-puretech-madrid': typeof Peugeot308PuretechMadridRoute
+  '/politica-cookies': typeof PoliticaCookiesRoute
+  '/politica-privacidad': typeof PoliticaPrivacidadRoute
+  '/precios': typeof PreciosRoute
+  '/recogida-entrega': typeof RecogidaEntregaRoute
+  '/sobre-nosotros': typeof SobreNosotrosRoute
+  '/blog/consumo-aceite-puretech': typeof BlogConsumoAceitePuretechRoute
+  '/blog/cuando-cambiar-correa-puretech': typeof BlogCuandoCambiarCorreaPuretechRoute
+  '/blog/diferencia-correa-cadena': typeof BlogDiferenciaCorreaCadenaRoute
+  '/blog/ecoboost-correa-humeda': typeof BlogEcoboostCorreaHumedaRoute
+  '/blog/garantia-stellantis-puretech': typeof BlogGarantiaStellantisPuretechRoute
+  '/blog/modelos-afectados-puretech': typeof BlogModelosAfectadosPuretechRoute
+  '/blog/precio-correa-puretech-2025': typeof BlogPrecioCorreaPuretech2025Route
+  '/blog/problema-correa-puretech': typeof BlogProblemaCorreaPuretechRoute
+  '/blog/sintomas-correa-puretech': typeof BlogSintomasCorreaPuretechRoute
+  '/blog/traqueteo-arranque-puretech': typeof BlogTraqueteoArranquePuretechRoute
+  '/blog/': typeof BlogIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/aviso-legal': typeof AvisoLegalRoute
+  '/citroen-c3-puretech-madrid': typeof CitroenC3PuretechMadridRoute
+  '/citroen-c4-cactus-puretech-madrid': typeof CitroenC4CactusPuretechMadridRoute
+  '/citroen-c4-puretech-madrid': typeof CitroenC4PuretechMadridRoute
+  '/contacto': typeof ContactoRoute
+  '/correa-bano-aceite': typeof CorreaBanoAceiteRoute
+  '/correa-distribucion-sumergida': typeof CorreaDistribucionSumergidaRoute
+  '/ds3-puretech-madrid': typeof Ds3PuretechMadridRoute
+  '/ds7-puretech-madrid': typeof Ds7PuretechMadridRoute
+  '/ford-ecosport-ecoboost-madrid': typeof FordEcosportEcoboostMadridRoute
+  '/ford-fiesta-ecoboost-madrid': typeof FordFiestaEcoboostMadridRoute
+  '/ford-focus-ecoboost-madrid': typeof FordFocusEcoboostMadridRoute
+  '/garantia': typeof GarantiaRoute
+  '/motor-ecoboost': typeof MotorEcoboostRoute
+  '/motor-puretech': typeof MotorPuretechRoute
+  '/opel-corsa-puretech-madrid': typeof OpelCorsaPuretechMadridRoute
+  '/opel-grandland-puretech-madrid': typeof OpelGrandlandPuretechMadridRoute
+  '/peugeot-2008-puretech-madrid': typeof Peugeot2008PuretechMadridRoute
+  '/peugeot-208-puretech-madrid': typeof Peugeot208PuretechMadridRoute
+  '/peugeot-3008-puretech-madrid': typeof Peugeot3008PuretechMadridRoute
+  '/peugeot-308-puretech-madrid': typeof Peugeot308PuretechMadridRoute
+  '/politica-cookies': typeof PoliticaCookiesRoute
+  '/politica-privacidad': typeof PoliticaPrivacidadRoute
+  '/precios': typeof PreciosRoute
+  '/recogida-entrega': typeof RecogidaEntregaRoute
+  '/sobre-nosotros': typeof SobreNosotrosRoute
+  '/blog/consumo-aceite-puretech': typeof BlogConsumoAceitePuretechRoute
+  '/blog/cuando-cambiar-correa-puretech': typeof BlogCuandoCambiarCorreaPuretechRoute
+  '/blog/diferencia-correa-cadena': typeof BlogDiferenciaCorreaCadenaRoute
+  '/blog/ecoboost-correa-humeda': typeof BlogEcoboostCorreaHumedaRoute
+  '/blog/garantia-stellantis-puretech': typeof BlogGarantiaStellantisPuretechRoute
+  '/blog/modelos-afectados-puretech': typeof BlogModelosAfectadosPuretechRoute
+  '/blog/precio-correa-puretech-2025': typeof BlogPrecioCorreaPuretech2025Route
+  '/blog/problema-correa-puretech': typeof BlogProblemaCorreaPuretechRoute
+  '/blog/sintomas-correa-puretech': typeof BlogSintomasCorreaPuretechRoute
+  '/blog/traqueteo-arranque-puretech': typeof BlogTraqueteoArranquePuretechRoute
+  '/blog': typeof BlogIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/aviso-legal': typeof AvisoLegalRoute
+  '/citroen-c3-puretech-madrid': typeof CitroenC3PuretechMadridRoute
+  '/citroen-c4-cactus-puretech-madrid': typeof CitroenC4CactusPuretechMadridRoute
+  '/citroen-c4-puretech-madrid': typeof CitroenC4PuretechMadridRoute
+  '/contacto': typeof ContactoRoute
+  '/correa-bano-aceite': typeof CorreaBanoAceiteRoute
+  '/correa-distribucion-sumergida': typeof CorreaDistribucionSumergidaRoute
+  '/ds3-puretech-madrid': typeof Ds3PuretechMadridRoute
+  '/ds7-puretech-madrid': typeof Ds7PuretechMadridRoute
+  '/ford-ecosport-ecoboost-madrid': typeof FordEcosportEcoboostMadridRoute
+  '/ford-fiesta-ecoboost-madrid': typeof FordFiestaEcoboostMadridRoute
+  '/ford-focus-ecoboost-madrid': typeof FordFocusEcoboostMadridRoute
+  '/garantia': typeof GarantiaRoute
+  '/motor-ecoboost': typeof MotorEcoboostRoute
+  '/motor-puretech': typeof MotorPuretechRoute
+  '/opel-corsa-puretech-madrid': typeof OpelCorsaPuretechMadridRoute
+  '/opel-grandland-puretech-madrid': typeof OpelGrandlandPuretechMadridRoute
+  '/peugeot-2008-puretech-madrid': typeof Peugeot2008PuretechMadridRoute
+  '/peugeot-208-puretech-madrid': typeof Peugeot208PuretechMadridRoute
+  '/peugeot-3008-puretech-madrid': typeof Peugeot3008PuretechMadridRoute
+  '/peugeot-308-puretech-madrid': typeof Peugeot308PuretechMadridRoute
+  '/politica-cookies': typeof PoliticaCookiesRoute
+  '/politica-privacidad': typeof PoliticaPrivacidadRoute
+  '/precios': typeof PreciosRoute
+  '/recogida-entrega': typeof RecogidaEntregaRoute
+  '/sobre-nosotros': typeof SobreNosotrosRoute
+  '/blog/consumo-aceite-puretech': typeof BlogConsumoAceitePuretechRoute
+  '/blog/cuando-cambiar-correa-puretech': typeof BlogCuandoCambiarCorreaPuretechRoute
+  '/blog/diferencia-correa-cadena': typeof BlogDiferenciaCorreaCadenaRoute
+  '/blog/ecoboost-correa-humeda': typeof BlogEcoboostCorreaHumedaRoute
+  '/blog/garantia-stellantis-puretech': typeof BlogGarantiaStellantisPuretechRoute
+  '/blog/modelos-afectados-puretech': typeof BlogModelosAfectadosPuretechRoute
+  '/blog/precio-correa-puretech-2025': typeof BlogPrecioCorreaPuretech2025Route
+  '/blog/problema-correa-puretech': typeof BlogProblemaCorreaPuretechRoute
+  '/blog/sintomas-correa-puretech': typeof BlogSintomasCorreaPuretechRoute
+  '/blog/traqueteo-arranque-puretech': typeof BlogTraqueteoArranquePuretechRoute
+  '/blog/': typeof BlogIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/aviso-legal'
+    | '/citroen-c3-puretech-madrid'
+    | '/citroen-c4-cactus-puretech-madrid'
+    | '/citroen-c4-puretech-madrid'
+    | '/contacto'
+    | '/correa-bano-aceite'
+    | '/correa-distribucion-sumergida'
+    | '/ds3-puretech-madrid'
+    | '/ds7-puretech-madrid'
+    | '/ford-ecosport-ecoboost-madrid'
+    | '/ford-fiesta-ecoboost-madrid'
+    | '/ford-focus-ecoboost-madrid'
+    | '/garantia'
+    | '/motor-ecoboost'
+    | '/motor-puretech'
+    | '/opel-corsa-puretech-madrid'
+    | '/opel-grandland-puretech-madrid'
+    | '/peugeot-2008-puretech-madrid'
+    | '/peugeot-208-puretech-madrid'
+    | '/peugeot-3008-puretech-madrid'
+    | '/peugeot-308-puretech-madrid'
+    | '/politica-cookies'
+    | '/politica-privacidad'
+    | '/precios'
+    | '/recogida-entrega'
+    | '/sobre-nosotros'
+    | '/blog/consumo-aceite-puretech'
+    | '/blog/cuando-cambiar-correa-puretech'
+    | '/blog/diferencia-correa-cadena'
+    | '/blog/ecoboost-correa-humeda'
+    | '/blog/garantia-stellantis-puretech'
+    | '/blog/modelos-afectados-puretech'
+    | '/blog/precio-correa-puretech-2025'
+    | '/blog/problema-correa-puretech'
+    | '/blog/sintomas-correa-puretech'
+    | '/blog/traqueteo-arranque-puretech'
+    | '/blog/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/aviso-legal'
+    | '/citroen-c3-puretech-madrid'
+    | '/citroen-c4-cactus-puretech-madrid'
+    | '/citroen-c4-puretech-madrid'
+    | '/contacto'
+    | '/correa-bano-aceite'
+    | '/correa-distribucion-sumergida'
+    | '/ds3-puretech-madrid'
+    | '/ds7-puretech-madrid'
+    | '/ford-ecosport-ecoboost-madrid'
+    | '/ford-fiesta-ecoboost-madrid'
+    | '/ford-focus-ecoboost-madrid'
+    | '/garantia'
+    | '/motor-ecoboost'
+    | '/motor-puretech'
+    | '/opel-corsa-puretech-madrid'
+    | '/opel-grandland-puretech-madrid'
+    | '/peugeot-2008-puretech-madrid'
+    | '/peugeot-208-puretech-madrid'
+    | '/peugeot-3008-puretech-madrid'
+    | '/peugeot-308-puretech-madrid'
+    | '/politica-cookies'
+    | '/politica-privacidad'
+    | '/precios'
+    | '/recogida-entrega'
+    | '/sobre-nosotros'
+    | '/blog/consumo-aceite-puretech'
+    | '/blog/cuando-cambiar-correa-puretech'
+    | '/blog/diferencia-correa-cadena'
+    | '/blog/ecoboost-correa-humeda'
+    | '/blog/garantia-stellantis-puretech'
+    | '/blog/modelos-afectados-puretech'
+    | '/blog/precio-correa-puretech-2025'
+    | '/blog/problema-correa-puretech'
+    | '/blog/sintomas-correa-puretech'
+    | '/blog/traqueteo-arranque-puretech'
+    | '/blog'
+  id:
+    | '__root__'
+    | '/'
+    | '/aviso-legal'
+    | '/citroen-c3-puretech-madrid'
+    | '/citroen-c4-cactus-puretech-madrid'
+    | '/citroen-c4-puretech-madrid'
+    | '/contacto'
+    | '/correa-bano-aceite'
+    | '/correa-distribucion-sumergida'
+    | '/ds3-puretech-madrid'
+    | '/ds7-puretech-madrid'
+    | '/ford-ecosport-ecoboost-madrid'
+    | '/ford-fiesta-ecoboost-madrid'
+    | '/ford-focus-ecoboost-madrid'
+    | '/garantia'
+    | '/motor-ecoboost'
+    | '/motor-puretech'
+    | '/opel-corsa-puretech-madrid'
+    | '/opel-grandland-puretech-madrid'
+    | '/peugeot-2008-puretech-madrid'
+    | '/peugeot-208-puretech-madrid'
+    | '/peugeot-3008-puretech-madrid'
+    | '/peugeot-308-puretech-madrid'
+    | '/politica-cookies'
+    | '/politica-privacidad'
+    | '/precios'
+    | '/recogida-entrega'
+    | '/sobre-nosotros'
+    | '/blog/consumo-aceite-puretech'
+    | '/blog/cuando-cambiar-correa-puretech'
+    | '/blog/diferencia-correa-cadena'
+    | '/blog/ecoboost-correa-humeda'
+    | '/blog/garantia-stellantis-puretech'
+    | '/blog/modelos-afectados-puretech'
+    | '/blog/precio-correa-puretech-2025'
+    | '/blog/problema-correa-puretech'
+    | '/blog/sintomas-correa-puretech'
+    | '/blog/traqueteo-arranque-puretech'
+    | '/blog/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AvisoLegalRoute: typeof AvisoLegalRoute
+  CitroenC3PuretechMadridRoute: typeof CitroenC3PuretechMadridRoute
+  CitroenC4CactusPuretechMadridRoute: typeof CitroenC4CactusPuretechMadridRoute
+  CitroenC4PuretechMadridRoute: typeof CitroenC4PuretechMadridRoute
+  ContactoRoute: typeof ContactoRoute
+  CorreaBanoAceiteRoute: typeof CorreaBanoAceiteRoute
+  CorreaDistribucionSumergidaRoute: typeof CorreaDistribucionSumergidaRoute
+  Ds3PuretechMadridRoute: typeof Ds3PuretechMadridRoute
+  Ds7PuretechMadridRoute: typeof Ds7PuretechMadridRoute
+  FordEcosportEcoboostMadridRoute: typeof FordEcosportEcoboostMadridRoute
+  FordFiestaEcoboostMadridRoute: typeof FordFiestaEcoboostMadridRoute
+  FordFocusEcoboostMadridRoute: typeof FordFocusEcoboostMadridRoute
+  GarantiaRoute: typeof GarantiaRoute
+  MotorEcoboostRoute: typeof MotorEcoboostRoute
+  MotorPuretechRoute: typeof MotorPuretechRoute
+  OpelCorsaPuretechMadridRoute: typeof OpelCorsaPuretechMadridRoute
+  OpelGrandlandPuretechMadridRoute: typeof OpelGrandlandPuretechMadridRoute
+  Peugeot2008PuretechMadridRoute: typeof Peugeot2008PuretechMadridRoute
+  Peugeot208PuretechMadridRoute: typeof Peugeot208PuretechMadridRoute
+  Peugeot3008PuretechMadridRoute: typeof Peugeot3008PuretechMadridRoute
+  Peugeot308PuretechMadridRoute: typeof Peugeot308PuretechMadridRoute
+  PoliticaCookiesRoute: typeof PoliticaCookiesRoute
+  PoliticaPrivacidadRoute: typeof PoliticaPrivacidadRoute
+  PreciosRoute: typeof PreciosRoute
+  RecogidaEntregaRoute: typeof RecogidaEntregaRoute
+  SobreNosotrosRoute: typeof SobreNosotrosRoute
+  BlogConsumoAceitePuretechRoute: typeof BlogConsumoAceitePuretechRoute
+  BlogCuandoCambiarCorreaPuretechRoute: typeof BlogCuandoCambiarCorreaPuretechRoute
+  BlogDiferenciaCorreaCadenaRoute: typeof BlogDiferenciaCorreaCadenaRoute
+  BlogEcoboostCorreaHumedaRoute: typeof BlogEcoboostCorreaHumedaRoute
+  BlogGarantiaStellantisPuretechRoute: typeof BlogGarantiaStellantisPuretechRoute
+  BlogModelosAfectadosPuretechRoute: typeof BlogModelosAfectadosPuretechRoute
+  BlogPrecioCorreaPuretech2025Route: typeof BlogPrecioCorreaPuretech2025Route
+  BlogProblemaCorreaPuretechRoute: typeof BlogProblemaCorreaPuretechRoute
+  BlogSintomasCorreaPuretechRoute: typeof BlogSintomasCorreaPuretechRoute
+  BlogTraqueteoArranquePuretechRoute: typeof BlogTraqueteoArranquePuretechRoute
+  BlogIndexRoute: typeof BlogIndexRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/sobre-nosotros': {
+      id: '/sobre-nosotros'
+      path: '/sobre-nosotros'
+      fullPath: '/sobre-nosotros'
+      preLoaderRoute: typeof SobreNosotrosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/recogida-entrega': {
+      id: '/recogida-entrega'
+      path: '/recogida-entrega'
+      fullPath: '/recogida-entrega'
+      preLoaderRoute: typeof RecogidaEntregaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/precios': {
+      id: '/precios'
+      path: '/precios'
+      fullPath: '/precios'
+      preLoaderRoute: typeof PreciosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/politica-privacidad': {
+      id: '/politica-privacidad'
+      path: '/politica-privacidad'
+      fullPath: '/politica-privacidad'
+      preLoaderRoute: typeof PoliticaPrivacidadRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/politica-cookies': {
+      id: '/politica-cookies'
+      path: '/politica-cookies'
+      fullPath: '/politica-cookies'
+      preLoaderRoute: typeof PoliticaCookiesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/peugeot-308-puretech-madrid': {
+      id: '/peugeot-308-puretech-madrid'
+      path: '/peugeot-308-puretech-madrid'
+      fullPath: '/peugeot-308-puretech-madrid'
+      preLoaderRoute: typeof Peugeot308PuretechMadridRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/peugeot-3008-puretech-madrid': {
+      id: '/peugeot-3008-puretech-madrid'
+      path: '/peugeot-3008-puretech-madrid'
+      fullPath: '/peugeot-3008-puretech-madrid'
+      preLoaderRoute: typeof Peugeot3008PuretechMadridRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/peugeot-208-puretech-madrid': {
+      id: '/peugeot-208-puretech-madrid'
+      path: '/peugeot-208-puretech-madrid'
+      fullPath: '/peugeot-208-puretech-madrid'
+      preLoaderRoute: typeof Peugeot208PuretechMadridRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/peugeot-2008-puretech-madrid': {
+      id: '/peugeot-2008-puretech-madrid'
+      path: '/peugeot-2008-puretech-madrid'
+      fullPath: '/peugeot-2008-puretech-madrid'
+      preLoaderRoute: typeof Peugeot2008PuretechMadridRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/opel-grandland-puretech-madrid': {
+      id: '/opel-grandland-puretech-madrid'
+      path: '/opel-grandland-puretech-madrid'
+      fullPath: '/opel-grandland-puretech-madrid'
+      preLoaderRoute: typeof OpelGrandlandPuretechMadridRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/opel-corsa-puretech-madrid': {
+      id: '/opel-corsa-puretech-madrid'
+      path: '/opel-corsa-puretech-madrid'
+      fullPath: '/opel-corsa-puretech-madrid'
+      preLoaderRoute: typeof OpelCorsaPuretechMadridRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/motor-puretech': {
+      id: '/motor-puretech'
+      path: '/motor-puretech'
+      fullPath: '/motor-puretech'
+      preLoaderRoute: typeof MotorPuretechRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/motor-ecoboost': {
+      id: '/motor-ecoboost'
+      path: '/motor-ecoboost'
+      fullPath: '/motor-ecoboost'
+      preLoaderRoute: typeof MotorEcoboostRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/garantia': {
+      id: '/garantia'
+      path: '/garantia'
+      fullPath: '/garantia'
+      preLoaderRoute: typeof GarantiaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ford-focus-ecoboost-madrid': {
+      id: '/ford-focus-ecoboost-madrid'
+      path: '/ford-focus-ecoboost-madrid'
+      fullPath: '/ford-focus-ecoboost-madrid'
+      preLoaderRoute: typeof FordFocusEcoboostMadridRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ford-fiesta-ecoboost-madrid': {
+      id: '/ford-fiesta-ecoboost-madrid'
+      path: '/ford-fiesta-ecoboost-madrid'
+      fullPath: '/ford-fiesta-ecoboost-madrid'
+      preLoaderRoute: typeof FordFiestaEcoboostMadridRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ford-ecosport-ecoboost-madrid': {
+      id: '/ford-ecosport-ecoboost-madrid'
+      path: '/ford-ecosport-ecoboost-madrid'
+      fullPath: '/ford-ecosport-ecoboost-madrid'
+      preLoaderRoute: typeof FordEcosportEcoboostMadridRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ds7-puretech-madrid': {
+      id: '/ds7-puretech-madrid'
+      path: '/ds7-puretech-madrid'
+      fullPath: '/ds7-puretech-madrid'
+      preLoaderRoute: typeof Ds7PuretechMadridRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ds3-puretech-madrid': {
+      id: '/ds3-puretech-madrid'
+      path: '/ds3-puretech-madrid'
+      fullPath: '/ds3-puretech-madrid'
+      preLoaderRoute: typeof Ds3PuretechMadridRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/correa-distribucion-sumergida': {
+      id: '/correa-distribucion-sumergida'
+      path: '/correa-distribucion-sumergida'
+      fullPath: '/correa-distribucion-sumergida'
+      preLoaderRoute: typeof CorreaDistribucionSumergidaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/correa-bano-aceite': {
+      id: '/correa-bano-aceite'
+      path: '/correa-bano-aceite'
+      fullPath: '/correa-bano-aceite'
+      preLoaderRoute: typeof CorreaBanoAceiteRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contacto': {
+      id: '/contacto'
+      path: '/contacto'
+      fullPath: '/contacto'
+      preLoaderRoute: typeof ContactoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/citroen-c4-puretech-madrid': {
+      id: '/citroen-c4-puretech-madrid'
+      path: '/citroen-c4-puretech-madrid'
+      fullPath: '/citroen-c4-puretech-madrid'
+      preLoaderRoute: typeof CitroenC4PuretechMadridRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/citroen-c4-cactus-puretech-madrid': {
+      id: '/citroen-c4-cactus-puretech-madrid'
+      path: '/citroen-c4-cactus-puretech-madrid'
+      fullPath: '/citroen-c4-cactus-puretech-madrid'
+      preLoaderRoute: typeof CitroenC4CactusPuretechMadridRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/citroen-c3-puretech-madrid': {
+      id: '/citroen-c3-puretech-madrid'
+      path: '/citroen-c3-puretech-madrid'
+      fullPath: '/citroen-c3-puretech-madrid'
+      preLoaderRoute: typeof CitroenC3PuretechMadridRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/aviso-legal': {
+      id: '/aviso-legal'
+      path: '/aviso-legal'
+      fullPath: '/aviso-legal'
+      preLoaderRoute: typeof AvisoLegalRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -48,11 +734,125 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/blog/': {
+      id: '/blog/'
+      path: '/blog'
+      fullPath: '/blog/'
+      preLoaderRoute: typeof BlogIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/traqueteo-arranque-puretech': {
+      id: '/blog/traqueteo-arranque-puretech'
+      path: '/blog/traqueteo-arranque-puretech'
+      fullPath: '/blog/traqueteo-arranque-puretech'
+      preLoaderRoute: typeof BlogTraqueteoArranquePuretechRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/sintomas-correa-puretech': {
+      id: '/blog/sintomas-correa-puretech'
+      path: '/blog/sintomas-correa-puretech'
+      fullPath: '/blog/sintomas-correa-puretech'
+      preLoaderRoute: typeof BlogSintomasCorreaPuretechRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/problema-correa-puretech': {
+      id: '/blog/problema-correa-puretech'
+      path: '/blog/problema-correa-puretech'
+      fullPath: '/blog/problema-correa-puretech'
+      preLoaderRoute: typeof BlogProblemaCorreaPuretechRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/precio-correa-puretech-2025': {
+      id: '/blog/precio-correa-puretech-2025'
+      path: '/blog/precio-correa-puretech-2025'
+      fullPath: '/blog/precio-correa-puretech-2025'
+      preLoaderRoute: typeof BlogPrecioCorreaPuretech2025RouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/modelos-afectados-puretech': {
+      id: '/blog/modelos-afectados-puretech'
+      path: '/blog/modelos-afectados-puretech'
+      fullPath: '/blog/modelos-afectados-puretech'
+      preLoaderRoute: typeof BlogModelosAfectadosPuretechRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/garantia-stellantis-puretech': {
+      id: '/blog/garantia-stellantis-puretech'
+      path: '/blog/garantia-stellantis-puretech'
+      fullPath: '/blog/garantia-stellantis-puretech'
+      preLoaderRoute: typeof BlogGarantiaStellantisPuretechRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/ecoboost-correa-humeda': {
+      id: '/blog/ecoboost-correa-humeda'
+      path: '/blog/ecoboost-correa-humeda'
+      fullPath: '/blog/ecoboost-correa-humeda'
+      preLoaderRoute: typeof BlogEcoboostCorreaHumedaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/diferencia-correa-cadena': {
+      id: '/blog/diferencia-correa-cadena'
+      path: '/blog/diferencia-correa-cadena'
+      fullPath: '/blog/diferencia-correa-cadena'
+      preLoaderRoute: typeof BlogDiferenciaCorreaCadenaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/cuando-cambiar-correa-puretech': {
+      id: '/blog/cuando-cambiar-correa-puretech'
+      path: '/blog/cuando-cambiar-correa-puretech'
+      fullPath: '/blog/cuando-cambiar-correa-puretech'
+      preLoaderRoute: typeof BlogCuandoCambiarCorreaPuretechRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/consumo-aceite-puretech': {
+      id: '/blog/consumo-aceite-puretech'
+      path: '/blog/consumo-aceite-puretech'
+      fullPath: '/blog/consumo-aceite-puretech'
+      preLoaderRoute: typeof BlogConsumoAceitePuretechRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AvisoLegalRoute: AvisoLegalRoute,
+  CitroenC3PuretechMadridRoute: CitroenC3PuretechMadridRoute,
+  CitroenC4CactusPuretechMadridRoute: CitroenC4CactusPuretechMadridRoute,
+  CitroenC4PuretechMadridRoute: CitroenC4PuretechMadridRoute,
+  ContactoRoute: ContactoRoute,
+  CorreaBanoAceiteRoute: CorreaBanoAceiteRoute,
+  CorreaDistribucionSumergidaRoute: CorreaDistribucionSumergidaRoute,
+  Ds3PuretechMadridRoute: Ds3PuretechMadridRoute,
+  Ds7PuretechMadridRoute: Ds7PuretechMadridRoute,
+  FordEcosportEcoboostMadridRoute: FordEcosportEcoboostMadridRoute,
+  FordFiestaEcoboostMadridRoute: FordFiestaEcoboostMadridRoute,
+  FordFocusEcoboostMadridRoute: FordFocusEcoboostMadridRoute,
+  GarantiaRoute: GarantiaRoute,
+  MotorEcoboostRoute: MotorEcoboostRoute,
+  MotorPuretechRoute: MotorPuretechRoute,
+  OpelCorsaPuretechMadridRoute: OpelCorsaPuretechMadridRoute,
+  OpelGrandlandPuretechMadridRoute: OpelGrandlandPuretechMadridRoute,
+  Peugeot2008PuretechMadridRoute: Peugeot2008PuretechMadridRoute,
+  Peugeot208PuretechMadridRoute: Peugeot208PuretechMadridRoute,
+  Peugeot3008PuretechMadridRoute: Peugeot3008PuretechMadridRoute,
+  Peugeot308PuretechMadridRoute: Peugeot308PuretechMadridRoute,
+  PoliticaCookiesRoute: PoliticaCookiesRoute,
+  PoliticaPrivacidadRoute: PoliticaPrivacidadRoute,
+  PreciosRoute: PreciosRoute,
+  RecogidaEntregaRoute: RecogidaEntregaRoute,
+  SobreNosotrosRoute: SobreNosotrosRoute,
+  BlogConsumoAceitePuretechRoute: BlogConsumoAceitePuretechRoute,
+  BlogCuandoCambiarCorreaPuretechRoute: BlogCuandoCambiarCorreaPuretechRoute,
+  BlogDiferenciaCorreaCadenaRoute: BlogDiferenciaCorreaCadenaRoute,
+  BlogEcoboostCorreaHumedaRoute: BlogEcoboostCorreaHumedaRoute,
+  BlogGarantiaStellantisPuretechRoute: BlogGarantiaStellantisPuretechRoute,
+  BlogModelosAfectadosPuretechRoute: BlogModelosAfectadosPuretechRoute,
+  BlogPrecioCorreaPuretech2025Route: BlogPrecioCorreaPuretech2025Route,
+  BlogProblemaCorreaPuretechRoute: BlogProblemaCorreaPuretechRoute,
+  BlogSintomasCorreaPuretechRoute: BlogSintomasCorreaPuretechRoute,
+  BlogTraqueteoArranquePuretechRoute: BlogTraqueteoArranquePuretechRoute,
+  BlogIndexRoute: BlogIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
