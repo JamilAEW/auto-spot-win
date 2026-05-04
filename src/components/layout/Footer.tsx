@@ -39,7 +39,7 @@ export function Footer() {
               <li><Link to="/motor-ecoboost" className="text-foreground/80 hover:text-primary">Motor EcoBoost</Link></li>
               <li><Link to="/correa-distribucion-sumergida" className="text-foreground/80 hover:text-primary">Correa Sumergida</Link></li>
               <li><Link to="/precios" className="text-foreground/80 hover:text-primary">Precios y Tarifas</Link></li>
-              <li><Link to="/garantia" className="text-foreground/80 hover:text-primary">Garantía 12 meses</Link></li>
+              <li><Link to="/garantia" className="text-foreground/80 hover:text-primary">Garantía 24 meses</Link></li>
               <li><Link to="/recogida-entrega" className="text-foreground/80 hover:text-primary">Recogida y entrega</Link></li>
             </ul>
             <h4 className="mt-6 mb-3 font-display text-xs font-bold uppercase tracking-widest text-muted-foreground">Modelos populares</h4>

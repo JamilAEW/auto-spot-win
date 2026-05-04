@@ -66,7 +66,7 @@ export function ArticleLayout({
               Cambio de correa por <span className="text-primary">399 €</span> en Madrid
             </h3>
             <p className="mt-3 text-muted-foreground">
-              Diagnóstico gratuito · Entrega el mismo día · Garantía 12 meses
+              Diagnóstico gratuito · Entrega el mismo día · Garantía 24 meses
             </p>
             <div className="mt-5"><CTAButtons /></div>
           </div>

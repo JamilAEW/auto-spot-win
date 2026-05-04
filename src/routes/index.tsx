@@ -30,7 +30,7 @@ const HOME_FAQS = [
   },
   {
     q: "¿Qué garantía ofrecéis?",
-    a: "12 meses o 20.000 km de garantía sobre el trabajo realizado y los recambios. Trabajamos con piezas Dayco originales, lo que respeta la garantía oficial del fabricante.",
+    a: "24 meses o 40.000 km de garantía sobre el trabajo realizado y los recambios. Trabajamos con piezas Dayco originales, lo que respeta la garantía oficial del fabricante.",
   },
   {
     q: "¿Por qué los motores PureTech y EcoBoost dan tantos problemas de correa?",
@@ -46,21 +46,21 @@ const PROCESO = [
   { step: "1", title: "Diagnóstico gratuito", desc: "Analizamos tu vehículo y te confirmamos si la correa necesita cambio." },
   { step: "2", title: "Presupuesto cerrado", desc: "Te damos un precio cerrado por escrito. Sin sorpresas ni extras." },
   { step: "3", title: "Cambio el mismo día", desc: "En 4–6 horas tu coche está listo. Trabajamos con kit Dayco reforzado." },
-  { step: "4", title: "Garantía y entrega", desc: "12 meses de garantía. Te entregamos el coche con factura detallada." },
+  { step: "4", title: "Garantía y entrega", desc: "24 meses de garantía. Te entregamos el coche con factura detallada." },
 ];
 
 const VENTAJAS = [
   { icon: Award, title: "Especialistas PureTech", desc: "Experiencia y herramientas específicas para motores 1.2 PureTech y 1.0 EcoBoost." },
   { icon: Clock, title: "Más rápido", desc: "Entregamos tu coche en menos de 1 día. Mantenimiento exprés sin esperas." },
   { icon: Wrench, title: "El precio más competitivo", desc: "Menos de la mitad que en concesionario. Presupuesto cerrado sin sorpresas." },
-  { icon: Shield, title: "Trabajo garantizado", desc: "12 meses o 20.000 km de garantía. Recambios Dayco originales reforzados." },
+  { icon: Shield, title: "Trabajo garantizado", desc: "24 meses o 40.000 km de garantía. Recambios Dayco originales reforzados." },
 ];
 
 export const Route = createFileRoute("/")({
   head: () => ({
     ...buildSeo({
       title: "Taller PureTech y EcoBoost Madrid | Correa Distribución Sumergida",
-      description: `Especialistas en correa de distribución bañada en aceite (PureTech 1.2 y EcoBoost 1.0) en Madrid. Presupuesto gratis en 5 min. Garantía 12 meses. ☎ ${SITE.phoneDisplay}`,
+      description: `Especialistas en correa de distribución bañada en aceite (PureTech 1.2 y EcoBoost 1.0) en Madrid. Presupuesto gratis en 5 min. Garantía 24 meses. ☎ ${SITE.phoneDisplay}`,
       path: "/",
     }),
     scripts: [ldScript(faqJsonLd(HOME_FAQS))],
@@ -133,7 +133,7 @@ function Home() {
                     "Tensores y rodillos nuevos",
                     "Aceite + filtro homologado",
                     "Mano de obra especializada",
-                    "Garantía 12 meses",
+                    "Garantía 24 meses",
                     "Entrega el mismo día",
                   ].map((b) => (
                     <li key={b} className="flex items-center gap-2.5">
@@ -250,7 +250,7 @@ function Home() {
                 Cambio de Correa <span className="text-primary">PureTech</span> con correa sumergida
               </h2>
               <p className="mt-4 text-lg text-muted-foreground">
-                399,00 € — IVA y mano de obra incluidos. Entrega el mismo día. Garantía 12 meses.
+                399,00 € — IVA y mano de obra incluidos. Entrega el mismo día. Garantía 24 meses.
               </p>
               <div className="mt-6">
                 <CTAButtons />

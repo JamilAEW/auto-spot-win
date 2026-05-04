@@ -127,7 +127,7 @@ export const articleBodies: Record<string, () => React.ReactNode> = {
       </p>
       <h2>Taller especialista (StopCars)</h2>
       <p>
-        <strong>399 € cerrado</strong> con IVA, mano de obra, kit Dayco reforzado, aceite homologado y filtro nuevo. Garantía 12 meses. Entrega el mismo día.
+        <strong>399 € cerrado</strong> con IVA, mano de obra, kit Dayco reforzado, aceite homologado y filtro nuevo. Garantía 24 meses. Entrega el mismo día.
       </p>
       <h2>¿Por qué la diferencia?</h2>
       <ul>
@@ -141,7 +141,7 @@ export const articleBodies: Record<string, () => React.ReactNode> = {
         <li>Aceite homologado por Stellantis (no genérico).</li>
         <li>Filtro de aceite nuevo.</li>
         <li>Diagnóstico de la bomba de aceite.</li>
-        <li>Garantía mínima 12 meses por escrito.</li>
+        <li>Garantía mínima 24 meses por escrito.</li>
       </ul>
       <p>
         Pide tu <Link to="/precios">presupuesto cerrado</Link> en 5 minutos por WhatsApp.
@@ -202,7 +202,7 @@ export const articleBodies: Record<string, () => React.ReactNode> = {
       </ul>
       <h2>Intervalo recomendado</h2>
       <p>
-        Ford recomienda <strong>150.000 km o 10 años</strong>. Por experiencia, en uso urbano y con aceite no homologado conviene adelantarlo a 120.000 km.
+        Ford recomienda <strong>150.000 km o 10 años</strong>. Por experiencia, en uso urbano y con aceite no homologado conviene adelantarlo a 140.000 km.
       </p>
       <h2>¿Cubre Ford la avería?</h2>
       <p>
@@ -210,7 +210,7 @@ export const articleBodies: Record<string, () => React.ReactNode> = {
       </p>
       <h2>Cambio en taller especialista</h2>
       <p>
-        En <Link to="/motor-ecoboost">StopCars Madrid</Link> cambiamos correa EcoBoost por <strong>399 €</strong> con kit Dayco reforzado, aceite homologado y garantía 12 meses. Misma calidad y mejor precio que un concesionario.
+        En <Link to="/motor-ecoboost">StopCars Madrid</Link> cambiamos correa EcoBoost por <strong>399 €</strong> con kit Dayco reforzado, aceite homologado y garantía 24 meses. Misma calidad y mejor precio que un concesionario.
       </p>
     </>
   ),
@@ -329,7 +329,7 @@ export const articleBodies: Record<string, () => React.ReactNode> = {
       </p>
       <h2>Correa de distribución (seca)</h2>
       <p>
-        Hecha de goma reforzada con fibra. Va por fuera del motor, en una cubierta seca. <strong>Ventajas:</strong> ligera, silenciosa, barata de fabricar. <strong>Inconvenientes:</strong> hay que cambiarla cada 80.000–120.000 km.
+        Hecha de goma reforzada con fibra. Va por fuera del motor, en una cubierta seca. <strong>Ventajas:</strong> ligera, silenciosa, barata de fabricar. <strong>Inconvenientes:</strong> hay que cambiarla cada 80.000–140.000 km.
       </p>
       <h2>Cadena de distribución</h2>
       <p>

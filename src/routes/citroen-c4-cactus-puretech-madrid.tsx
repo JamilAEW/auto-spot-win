@@ -12,7 +12,7 @@ export const Route = createFileRoute("/citroen-c4-cactus-puretech-madrid")({
     return {
       ...buildSeo({
         title: "Cambio Correa C4 Cactus PureTech Madrid | 399 € | StopCars",
-        description: "Taller especialista en Citroën C4 Cactus PureTech 1.2 en Madrid. Cambio de correa de distribución sumergida con kit Dayco reforzado por 399 € con IVA y mano de obra. Garantía 12 meses. Entrega el mismo día.",
+        description: "Taller especialista en Citroën C4 Cactus PureTech 1.2 en Madrid. Cambio de correa de distribución sumergida con kit Dayco reforzado por 399 € con IVA y mano de obra. Garantía 24 meses. Entrega el mismo día.",
         path: `/${SLUG}`,
       }),
       scripts: [

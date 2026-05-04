@@ -103,7 +103,7 @@ export const autoRepairJsonLd = () => ({
   "@id": `${SITE.domain}/#business`,
   name: SITE.legalName,
   description:
-    "Especialistas en correa de distribución sumergida PureTech y EcoBoost en Madrid. Cambio en el día con garantía 12 meses.",
+    "Especialistas en correa de distribución sumergida PureTech y EcoBoost en Madrid. Cambio en el día con garantía 24 meses.",
   url: SITE.domain,
   telephone: SITE.phone,
   email: SITE.email,

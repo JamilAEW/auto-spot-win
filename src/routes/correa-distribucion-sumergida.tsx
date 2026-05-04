@@ -33,7 +33,7 @@ const FAQS = [
   },
   {
     q: "¿Qué precio tiene en taller especialista?",
-    a: "399 € en StopCars Madrid con IVA, mano de obra, kit Dayco reforzado, aceite y filtro homologados. Garantía 12 meses incluida.",
+    a: "399 € en StopCars Madrid con IVA, mano de obra, kit Dayco reforzado, aceite y filtro homologados. Garantía 24 meses incluida.",
   },
 ];
 
