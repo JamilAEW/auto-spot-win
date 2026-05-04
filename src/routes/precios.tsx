@@ -10,7 +10,7 @@ import { SITE } from "@/lib/site";
 const FAQS = [
   { q: "¿El precio incluye IVA?", a: "Sí. 399 € es el precio final con IVA, mano de obra y todos los recambios incluidos." },
   { q: "¿Hay sorpresas o extras?", a: "No. Te damos presupuesto cerrado por escrito antes de empezar. Si surge algo adicional, te llamamos para autorizarlo." },
-  { q: "¿Qué formas de pago aceptáis?", a: "Efectivo y tarjeta de crédito/débito. Posibilidad de financiación a 3, 6 o 24 meses sin intereses." },
+  { q: "¿Qué formas de pago aceptáis?", a: "Efectivo y tarjeta de crédito/débito. Posibilidad de financiación a 3, 6 o 12 meses sin intereses." },
   { q: "¿Hacéis factura?", a: "Sí, factura detallada con todos los recambios y mano de obra desglosados. Útil para garantías y reclamaciones." },
 ];
 
