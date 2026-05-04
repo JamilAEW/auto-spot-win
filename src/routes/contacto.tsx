@@ -4,7 +4,7 @@ import { buildSeo, ldScript, breadcrumbJsonLd } from "@/lib/seo";
 import { CTAButtons, WhatsAppCTA } from "@/components/layout/CTAButtons";
 import { Section, SectionHeader } from "@/components/Section";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
-import { SITE, telUrl, whatsappUrl } from "@/lib/site";
+import { SITE, telUrl, whatsappUrl, BRANCHES } from "@/lib/site";
 
 export const Route = createFileRoute("/contacto")({
   head: () => ({
@@ -34,46 +34,53 @@ function ContactoPage() {
         <div className="grid gap-10 lg:grid-cols-[1fr_1.1fr]">
           {/* Datos contacto */}
           <div>
-            <SectionHeader eyebrow="Datos directos" title="Hablemos ahora" />
-            <div className="space-y-4">
-              <a href={telUrl} className="flex items-start gap-4 rounded-xl border border-border bg-surface p-5 transition hover:border-primary">
-                <Phone className="mt-1 h-6 w-6 text-primary" />
-                <div>
-                  <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground">Teléfono</p>
-                  <p className="mt-1 font-display text-2xl font-black">{SITE.phoneDisplay}</p>
-                </div>
-              </a>
-              <a href={whatsappUrl()} target="_blank" rel="noopener noreferrer" className="flex items-start gap-4 rounded-xl border border-border bg-surface p-5 transition hover:border-primary">
-                <MessageCircle className="mt-1 h-6 w-6 text-primary" />
-                <div>
-                  <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground">WhatsApp</p>
-                  <p className="mt-1 font-display text-2xl font-black">{SITE.phoneDisplay}</p>
-                  <p className="text-sm text-muted-foreground">Respuesta en menos de 1 h en horario laboral</p>
-                </div>
-              </a>
-              <a href={`mailto:${SITE.email}`} className="flex items-start gap-4 rounded-xl border border-border bg-surface p-5 transition hover:border-primary">
-                <Mail className="mt-1 h-6 w-6 text-primary" />
-                <div>
-                  <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground">Email</p>
-                  <p className="mt-1 font-display text-lg font-bold">{SITE.email}</p>
-                </div>
-              </a>
-              <div className="flex items-start gap-4 rounded-xl border border-border bg-surface p-5">
-                <MapPin className="mt-1 h-6 w-6 text-primary" />
-                <div>
-                  <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground">Dirección</p>
-                  <p className="mt-1 font-display text-lg font-bold">{SITE.address}, {SITE.postalCode} {SITE.city}</p>
-                </div>
+            <SectionHeader eyebrow="2 Sucursales" title="Hablemos ahora" />
+            <a href={`mailto:${SITE.email}`} className="mb-4 flex items-start gap-4 rounded-xl border border-border bg-surface p-5 transition hover:border-primary">
+              <Mail className="mt-1 h-6 w-6 text-primary" />
+              <div>
+                <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground">Email general</p>
+                <p className="mt-1 font-display text-lg font-bold">{SITE.email}</p>
               </div>
-              <div className="flex items-start gap-4 rounded-xl border border-border bg-surface p-5">
-                <Clock className="mt-1 h-6 w-6 text-primary" />
-                <div>
-                  <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground">Horario</p>
-                  <p className="mt-1 text-sm">{SITE.hours.weekdays}</p>
-                  <p className="text-sm">{SITE.hours.saturday}</p>
-                  <p className="text-sm text-muted-foreground">{SITE.hours.sunday}</p>
+            </a>
+            <div className="space-y-6">
+              {BRANCHES.map((b) => (
+                <div key={b.id} className="rounded-2xl border border-border bg-surface p-5">
+                  <p className="text-xs font-bold uppercase tracking-widest text-primary">{b.name}</p>
+                  <div className="mt-3 space-y-3">
+                    <a href={`tel:${b.phone}`} className="flex items-start gap-3 hover:text-primary">
+                      <Phone className="mt-1 h-5 w-5 text-primary" />
+                      <div>
+                        <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground">Teléfono</p>
+                        <p className="font-display text-xl font-black">{b.phoneDisplay}</p>
+                      </div>
+                    </a>
+                    <a href={whatsappUrl(undefined, b.whatsapp)} target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 hover:text-primary">
+                      <MessageCircle className="mt-1 h-5 w-5 text-primary" />
+                      <div>
+                        <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground">WhatsApp</p>
+                        <p className="font-display text-base font-bold">{b.phoneDisplay}</p>
+                      </div>
+                    </a>
+                    <a href={b.googleMaps} target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 hover:text-primary">
+                      <MapPin className="mt-1 h-5 w-5 text-primary" />
+                      <div>
+                        <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground">Dirección</p>
+                        <p className="font-display text-base font-bold">{b.address}, {b.postalCode} {b.city}</p>
+                        <p className="text-xs text-muted-foreground">{b.district}</p>
+                      </div>
+                    </a>
+                    <div className="flex items-start gap-3">
+                      <Clock className="mt-1 h-5 w-5 text-primary" />
+                      <div>
+                        <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground">Horario</p>
+                        <p className="text-sm">{b.hours.weekdays}</p>
+                        <p className="text-sm">{b.hours.saturday}</p>
+                        <p className="text-sm text-muted-foreground">{b.hours.sunday}</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
+              ))}
             </div>
           </div>
 
