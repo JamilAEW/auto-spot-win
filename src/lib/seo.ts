@@ -1,4 +1,4 @@
-import { SITE, canonical } from "./site";
+import { SITE, canonical, BRANCHES } from "./site";
 
 interface SeoInput {
   title: string;
@@ -103,7 +103,7 @@ export const autoRepairJsonLd = () => ({
   "@id": `${SITE.domain}/#business`,
   name: SITE.legalName,
   description:
-    "Especialistas en correa de distribución sumergida PureTech y EcoBoost en Madrid. Cambio en el día con garantía 24 meses.",
+    "Especialistas en correa de distribución sumergida PureTech y EcoBoost en Madrid. Cambio en el día con garantía 24 meses. 2 sucursales: Usera y Alcorcón.",
   url: SITE.domain,
   telephone: SITE.phone,
   email: SITE.email,
@@ -128,7 +128,7 @@ export const autoRepairJsonLd = () => ({
     {
       "@type": "OpeningHoursSpecification",
       dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-      opens: "08:30",
+      opens: "09:00",
       closes: "19:00",
     },
     {
@@ -151,6 +151,43 @@ export const autoRepairJsonLd = () => ({
     SITE.social.instagram,
     SITE.social.googleMaps,
   ],
+  department: BRANCHES.map((b) => ({
+    "@type": "AutoRepair",
+    "@id": `${SITE.domain}/#branch-${b.id}`,
+    name: b.name,
+    telephone: b.phone,
+    url: SITE.domain,
+    image: `${SITE.domain}/og-default.jpg`,
+    priceRange: "€€",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: b.address,
+      addressLocality: b.city,
+      addressRegion: b.region,
+      postalCode: b.postalCode,
+      addressCountry: b.country,
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: b.geo.lat,
+      longitude: b.geo.lng,
+    },
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        opens: "09:00",
+        closes: "19:00",
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: "Saturday",
+        opens: "09:00",
+        closes: "14:00",
+      },
+    ],
+    hasMap: b.googleMaps,
+  })),
 });
 
 export const articleJsonLd = (input: {
