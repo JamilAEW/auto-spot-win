@@ -89,7 +89,7 @@ function Home() {
           }}
           aria-hidden="true"
         />
-        <div className="relative mx-auto max-w-7xl px-4 py-20 md:px-6 md:py-32 lg:py-40">
+        <div className="relative mx-auto max-w-7xl px-4 py-10 md:px-6 md:py-16 lg:py-20">
           <div className="grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
             <div>
               <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-primary">
