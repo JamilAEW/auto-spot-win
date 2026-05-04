@@ -14,8 +14,8 @@ import heroWorkshop from "@/assets/hero-workshop.jpg";
 import flyerCorrea from "@/assets/flyer-cambia-correa.png";
 import flyerMejor from "@/assets/flyer-mejor-opcion.png";
 import wetBeltImg from "@/assets/wet-belt-closeup.jpg";
-import sucursalUsera from "@/assets/sucursal-usera.webp";
-import sucursalAlcorcon from "@/assets/sucursal-alcorcon.webp";
+import sucursalUsera from "@/assets/sucursal-usera.jpg";
+import sucursalAlcorcon from "@/assets/sucursal-alcorcon.jpg";
 
 const BRANCH_PHOTOS: Record<string, string> = {
   usera: sucursalUsera,
@@ -369,12 +369,14 @@ function Home() {
               key={b.id}
               className="overflow-hidden rounded-xl border border-border bg-background shadow-sm transition hover:border-primary/60"
             >
-              <img
-                src={BRANCH_PHOTOS[b.id]}
-                alt={`Fachada del taller ${b.name}`}
-                loading="lazy"
-                className="h-64 w-full object-cover"
-              />
+              <div className="flex aspect-[4/3] w-full items-center justify-center bg-carbon">
+                <img
+                  src={BRANCH_PHOTOS[b.id]}
+                  alt={`Fachada del taller ${b.name}`}
+                  loading="lazy"
+                  className="h-full w-full object-contain"
+                />
+              </div>
               <div className="p-6">
                 <h3 className="font-display text-xl font-black uppercase tracking-tight">
                   {b.name}
