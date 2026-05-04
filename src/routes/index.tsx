@@ -3,7 +3,7 @@ import {
   Wrench, Clock, Shield, Award, AlertTriangle, CheckCircle2, MapPin, Phone,
 } from "lucide-react";
 import { buildSeo, ldScript, faqJsonLd } from "@/lib/seo";
-import { SITE, telUrl } from "@/lib/site";
+import { SITE, telUrl, BRANCHES, whatsappUrl } from "@/lib/site";
 import { CTAButtons, WhatsAppCTA } from "@/components/layout/CTAButtons";
 import { UrgencyBanner } from "@/components/layout/UrgencyBanner";
 import { Section, SectionHeader } from "@/components/Section";
@@ -14,6 +14,13 @@ import heroWorkshop from "@/assets/hero-workshop.jpg";
 import flyerCorrea from "@/assets/flyer-cambia-correa.png";
 import flyerMejor from "@/assets/flyer-mejor-opcion.png";
 import wetBeltImg from "@/assets/wet-belt-closeup.jpg";
+import sucursalUsera from "@/assets/sucursal-usera.webp";
+import sucursalAlcorcon from "@/assets/sucursal-alcorcon.webp";
+
+const BRANCH_PHOTOS: Record<string, string> = {
+  usera: sucursalUsera,
+  alcorcon: sucursalAlcorcon,
+};
 
 const HOME_FAQS = [
   {
@@ -348,35 +355,90 @@ function Home() {
         </div>
       </Section>
 
-      {/* MAPA */}
+      {/* SUCURSALES */}
       <Section variant="surface" id="mapa">
-        <div className="grid gap-10 lg:grid-cols-[1fr_1.2fr] lg:items-start">
-          <div>
-            <SectionHeader
-              eyebrow="Encuéntranos"
-              title="¿Dónde estamos?"
-              description="Nuestro taller está en Madrid. Atendemos a toda la Comunidad de Madrid con servicio de recogida y entrega."
-            />
-            <ul className="space-y-4 text-base">
-              <li className="flex gap-3"><MapPin className="mt-1 h-5 w-5 shrink-0 text-primary" /><span><strong>{SITE.address}</strong><br />{SITE.postalCode} {SITE.city}, {SITE.region}</span></li>
-              <li className="flex gap-3"><Phone className="mt-1 h-5 w-5 shrink-0 text-primary" /><a href={telUrl} className="hover:text-primary">{SITE.phoneDisplay}</a></li>
-              <li className="flex gap-3"><Clock className="mt-1 h-5 w-5 shrink-0 text-primary" /><span>{SITE.hours.weekdays}<br />{SITE.hours.saturday}</span></li>
-            </ul>
-            <div className="mt-6">
-              <CTAButtons />
-            </div>
-          </div>
-          <div className="overflow-hidden rounded-xl border border-border">
-            <iframe
-              title="Mapa de StopCars Madrid"
-              src={`https://maps.google.com/maps?q=${SITE.geo.lat},${SITE.geo.lng}&z=14&output=embed`}
-              width="100%"
-              height="450"
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              className="h-[450px] w-full border-0"
-            />
-          </div>
+        <SectionHeader
+          eyebrow="Encuéntranos"
+          title="¿Dónde estamos?"
+          description="Tenemos 2 sucursales en la Comunidad de Madrid. Atendemos también con servicio de recogida y entrega a domicilio."
+          align="center"
+        />
+        <div className="grid gap-8 lg:grid-cols-2">
+          {BRANCHES.map((b) => (
+            <article
+              key={b.id}
+              className="overflow-hidden rounded-xl border border-border bg-background shadow-sm transition hover:border-primary/60"
+            >
+              <img
+                src={BRANCH_PHOTOS[b.id]}
+                alt={`Fachada del taller ${b.name}`}
+                loading="lazy"
+                className="h-64 w-full object-cover"
+              />
+              <div className="p-6">
+                <h3 className="font-display text-xl font-black uppercase tracking-tight">
+                  {b.name}
+                </h3>
+                <ul className="mt-4 space-y-3 text-sm">
+                  <li className="flex gap-3">
+                    <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
+                    <span>
+                      <strong>{b.address}</strong>
+                      <br />
+                      {b.postalCode} {b.city}, {b.region}
+                    </span>
+                  </li>
+                  <li className="flex gap-3">
+                    <Phone className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
+                    <a href={`tel:${b.phone}`} className="hover:text-primary">
+                      {b.phoneDisplay}
+                    </a>
+                  </li>
+                  <li className="flex gap-3">
+                    <Clock className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
+                    <span>
+                      {b.hours.weekdays}
+                      <br />
+                      {b.hours.saturday}
+                    </span>
+                  </li>
+                </ul>
+                <div className="mt-5 overflow-hidden rounded-lg border border-border">
+                  <iframe
+                    title={`Mapa ${b.name}`}
+                    src={`https://maps.google.com/maps?q=${b.geo.lat},${b.geo.lng}&z=15&output=embed`}
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    className="h-56 w-full border-0"
+                  />
+                </div>
+                <div className="mt-5 flex flex-wrap gap-2">
+                  <a
+                    href={`tel:${b.phone}`}
+                    className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 font-display text-xs font-bold uppercase tracking-wide text-primary-foreground hover:opacity-90"
+                  >
+                    Llamar
+                  </a>
+                  <a
+                    href={whatsappUrl(undefined, b.whatsapp)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center rounded-md border border-border px-4 py-2 font-display text-xs font-bold uppercase tracking-wide hover:border-primary hover:text-primary"
+                  >
+                    WhatsApp
+                  </a>
+                  <a
+                    href={b.googleMaps}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center rounded-md border border-border px-4 py-2 font-display text-xs font-bold uppercase tracking-wide hover:border-primary hover:text-primary"
+                  >
+                    Cómo llegar
+                  </a>
+                </div>
+              </div>
+            </article>
+          ))}
         </div>
       </Section>
 
