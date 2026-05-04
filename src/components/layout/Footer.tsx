@@ -16,7 +16,7 @@ export function Footer() {
           {/* Col 1: Marca + NAP */}
           <div>
             <Link to="/" className="inline-flex items-center" aria-label="StopCars">
-              <img src={logoUrl} alt="StopCars Madrid" width={180} height={56} className="h-12 w-auto" />
+              <img src={logoUrl} alt="StopCars Madrid" width={360} height={112} className="h-24 w-auto" />
             </Link>
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
               Taller mecánico en Madrid especializado en correa de distribución sumergida para motores PureTech (Peugeot, Citroën, Opel, DS) y EcoBoost (Ford).
