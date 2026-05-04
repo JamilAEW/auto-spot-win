@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { MapPin, Phone, Mail, Clock, Facebook, Instagram } from "lucide-react";
 import logoUrl from "@/assets/stopcars-logo.png";
-import { SITE, telUrl, BRANCHES } from "@/lib/site";
+import { SITE, BRANCHES } from "@/lib/site";
 import { recentPosts } from "@/lib/blog-posts";
 import { MODELS } from "@/lib/models";
 
