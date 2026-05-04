@@ -4,7 +4,7 @@ import { buildSeo, ldScript, breadcrumbJsonLd } from "@/lib/seo";
 import { CTAButtons, WhatsAppCTA } from "@/components/layout/CTAButtons";
 import { Section, SectionHeader } from "@/components/Section";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
-import { SITE, telUrl, whatsappUrl, BRANCHES } from "@/lib/site";
+import { SITE, whatsappUrl, BRANCHES } from "@/lib/site";
 
 export const Route = createFileRoute("/contacto")({
   head: () => ({
