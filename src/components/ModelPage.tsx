@@ -18,13 +18,13 @@ export function ModelPage({ model }: { model: ModelInfo }) {
   const FAQS = [
     {
       q: `¿Cuánto cuesta cambiar la correa del ${fullName} en Madrid?`,
-      a: `En StopCars Madrid el cambio de correa de tu ${fullName} con motor ${model.engine} cuesta 399 € con IVA, mano de obra, kit Dayco reforzado, aceite homologado y filtro nuevo. Garantía 12 meses incluida.`,
+      a: `En StopCars Madrid el cambio de correa de tu ${fullName} con motor ${model.engine} cuesta 399 € con IVA, mano de obra, kit Dayco reforzado, aceite homologado y filtro nuevo. Garantía 24 meses incluida.`,
     },
     {
       q: `¿Cada cuánto debo cambiar la correa del ${fullName}?`,
       a: model.pillar === "puretech"
         ? `El fabricante recomienda 100.000 km o 6 años. Por seguridad, en uso urbano recomendamos adelantarlo a 80.000 km, sobre todo si notas síntomas como traqueteo o consumo de aceite.`
-        : `Ford recomienda 150.000 km o 10 años. Por experiencia con el ${fullName}, conviene adelantar el cambio a 120.000 km si el coche se usa principalmente en ciudad.`,
+        : `Ford recomienda 150.000 km o 10 años. Por experiencia con el ${fullName}, conviene adelantar el cambio a 140.000 km si el coche se usa principalmente en ciudad.`,
     },
     {
       q: `¿Cuánto tarda el cambio en mi ${fullName}?`,
@@ -32,7 +32,7 @@ export function ModelPage({ model }: { model: ModelInfo }) {
     },
     {
       q: `¿Qué garantía dais sobre el trabajo en el ${fullName}?`,
-      a: `12 meses o 20.000 km sobre el trabajo y los recambios. Trabajamos con piezas Dayco originales que respetan la garantía oficial del fabricante.`,
+      a: `24 meses o 40.000 km sobre el trabajo y los recambios. Trabajamos con piezas Dayco originales que respetan la garantía oficial del fabricante.`,
     },
   ];
 
@@ -82,7 +82,7 @@ export function ModelPage({ model }: { model: ModelInfo }) {
                   `Kit Dayco específico para ${fullName}`,
                   "Tensores y rodillos nuevos",
                   "Aceite + filtro homologado",
-                  "Garantía 12 meses",
+                  "Garantía 24 meses",
                   "Entrega el mismo día",
                 ].map((b) => (
                   <li key={b} className="flex items-center gap-2.5">
@@ -138,7 +138,7 @@ export function ModelPage({ model }: { model: ModelInfo }) {
               "Aceite homologado por el fabricante",
               "Filtro de aceite nuevo",
               "Mano de obra de mecánico especialista",
-              "Garantía 12 meses / 20.000 km",
+              "Garantía 24 meses / 40.000 km",
               "Factura detallada para historial del coche",
             ].map((b) => (
               <li key={b} className="flex items-start gap-2.5">
@@ -183,7 +183,7 @@ export function ModelPage({ model }: { model: ModelInfo }) {
             ¿Tienes un <span className="text-primary">{fullName}</span>?
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            Pide tu presupuesto cerrado en 5 minutos. Cambio el mismo día con garantía 12 meses.
+            Pide tu presupuesto cerrado en 5 minutos. Cambio el mismo día con garantía 24 meses.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             <CTAButtons />
@@ -204,7 +204,7 @@ export const modelFaqs = (m: ModelInfo) => {
   return [
     {
       q: `¿Cuánto cuesta cambiar la correa del ${fullName} en Madrid?`,
-      a: `399 € con IVA, mano de obra, kit Dayco reforzado, aceite homologado y filtro nuevo. Garantía 12 meses incluida.`,
+      a: `399 € con IVA, mano de obra, kit Dayco reforzado, aceite homologado y filtro nuevo. Garantía 24 meses incluida.`,
     },
     {
       q: `¿Cada cuánto debo cambiar la correa del ${fullName}?`,
@@ -216,7 +216,7 @@ export const modelFaqs = (m: ModelInfo) => {
     },
     {
       q: `¿Qué garantía dais?`,
-      a: `12 meses o 20.000 km sobre trabajo y recambios.`,
+      a: `24 meses o 40.000 km sobre trabajo y recambios.`,
     },
   ];
 };

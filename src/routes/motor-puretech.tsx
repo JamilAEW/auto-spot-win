@@ -37,7 +37,7 @@ export const Route = createFileRoute("/motor-puretech")({
     ...buildSeo({
       title: "Especialistas Motor PureTech Madrid | Correa Sumergida 1.2 | StopCars",
       description:
-        "Taller especialista en motor PureTech 1.0 y 1.2 en Madrid. Cambio de correa de distribución sumergida con kit Dayco reforzado. Presupuesto cerrado 399 €. Garantía 12 meses.",
+        "Taller especialista en motor PureTech 1.0 y 1.2 en Madrid. Cambio de correa de distribución sumergida con kit Dayco reforzado. Presupuesto cerrado 399 €. Garantía 24 meses.",
       path: "/motor-puretech",
     }),
     scripts: [
@@ -45,7 +45,7 @@ export const Route = createFileRoute("/motor-puretech")({
       ldScript(
         serviceJsonLd(
           "Cambio de Correa de Distribución Sumergida PureTech",
-          "Cambio de correa de distribución bañada en aceite para motores PureTech 1.0 y 1.2 (Peugeot, Citroën, Opel, DS). Kit Dayco, mano de obra y garantía 12 meses.",
+          "Cambio de correa de distribución bañada en aceite para motores PureTech 1.0 y 1.2 (Peugeot, Citroën, Opel, DS). Kit Dayco, mano de obra y garantía 24 meses.",
           "399",
         ),
       ),
@@ -71,7 +71,7 @@ function PuretechPillar() {
           <span className="text-primary">PureTech 1.2</span> en Madrid
         </>
       }
-      heroLead={`Cambio de correa de distribución sumergida en Peugeot, Citroën, Opel y DS. Kit Dayco reforzado, mano de obra y garantía 12 meses por ${SITE.promoPrice}.`}
+      heroLead={`Cambio de correa de distribución sumergida en Peugeot, Citroën, Opel y DS. Kit Dayco reforzado, mano de obra y garantía 24 meses por ${SITE.promoPrice}.`}
       heroImage={heroImg}
       intervalKm="100.000 km"
       intervalYears="6 años"

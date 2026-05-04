@@ -12,7 +12,7 @@ export const Route = createFileRoute("/ford-focus-ecoboost-madrid")({
     return {
       ...buildSeo({
         title: "Cambio Correa Ford Focus EcoBoost Madrid | 399 € | StopCars",
-        description: "Taller especialista en Ford Focus EcoBoost 1.0 en Madrid. Cambio de correa de distribución sumergida con kit Dayco reforzado por 399 € con IVA y mano de obra. Garantía 12 meses. Entrega el mismo día.",
+        description: "Taller especialista en Ford Focus EcoBoost 1.0 en Madrid. Cambio de correa de distribución sumergida con kit Dayco reforzado por 399 € con IVA y mano de obra. Garantía 24 meses. Entrega el mismo día.",
         path: `/${SLUG}`,
       }),
       scripts: [

@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { MapPin, Phone, Mail, Clock, Facebook, Instagram } from "lucide-react";
 import logoUrl from "@/assets/stopcars-logo.png";
-import { SITE, telUrl } from "@/lib/site";
+import { SITE, BRANCHES } from "@/lib/site";
 import { recentPosts } from "@/lib/blog-posts";
 import { MODELS } from "@/lib/models";
 
@@ -39,7 +39,7 @@ export function Footer() {
               <li><Link to="/motor-ecoboost" className="text-foreground/80 hover:text-primary">Motor EcoBoost</Link></li>
               <li><Link to="/correa-distribucion-sumergida" className="text-foreground/80 hover:text-primary">Correa Sumergida</Link></li>
               <li><Link to="/precios" className="text-foreground/80 hover:text-primary">Precios y Tarifas</Link></li>
-              <li><Link to="/garantia" className="text-foreground/80 hover:text-primary">Garantía 12 meses</Link></li>
+              <li><Link to="/garantia" className="text-foreground/80 hover:text-primary">Garantía 24 meses</Link></li>
               <li><Link to="/recogida-entrega" className="text-foreground/80 hover:text-primary">Recogida y entrega</Link></li>
             </ul>
             <h4 className="mt-6 mb-3 font-display text-xs font-bold uppercase tracking-widest text-muted-foreground">Modelos populares</h4>
@@ -73,20 +73,20 @@ export function Footer() {
 
           {/* Col 4: Contacto + horarios */}
           <div>
-            <h3 className="mb-4 font-display text-sm font-bold uppercase tracking-widest text-primary">Contacto</h3>
-            <ul className="space-y-3 text-sm text-foreground/85">
-              <li className="flex gap-3"><MapPin className="mt-0.5 h-4 w-4 shrink-0 text-primary" /><span>{SITE.address}, {SITE.postalCode} {SITE.city}</span></li>
-              <li className="flex gap-3"><Phone className="mt-0.5 h-4 w-4 shrink-0 text-primary" /><a href={telUrl} className="hover:text-primary">{SITE.phoneDisplay}</a></li>
+            <h3 className="mb-4 font-display text-sm font-bold uppercase tracking-widest text-primary">Contacto · 2 Sucursales</h3>
+            <ul className="space-y-2 text-sm text-foreground/85">
               <li className="flex gap-3"><Mail className="mt-0.5 h-4 w-4 shrink-0 text-primary" /><a href={`mailto:${SITE.email}`} className="hover:text-primary">{SITE.email}</a></li>
-              <li className="flex gap-3">
-                <Clock className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
-                <span>
-                  {SITE.hours.weekdays}<br />
-                  {SITE.hours.saturday}<br />
-                  <span className="text-muted-foreground">{SITE.hours.sunday}</span>
-                </span>
-              </li>
             </ul>
+            <div className="mt-4 space-y-4">
+              {BRANCHES.map((b) => (
+                <div key={b.id} className="rounded-lg border border-border bg-background/40 p-3 text-sm">
+                  <p className="font-display text-xs font-bold uppercase tracking-widest text-primary">{b.name}</p>
+                  <p className="mt-2 flex gap-2 text-foreground/85"><MapPin className="mt-0.5 h-4 w-4 shrink-0 text-primary" /><a href={b.googleMaps} target="_blank" rel="noopener noreferrer" className="hover:text-primary">{b.address}, {b.postalCode} {b.city}</a></p>
+                  <p className="mt-1.5 flex gap-2 text-foreground/85"><Phone className="mt-0.5 h-4 w-4 shrink-0 text-primary" /><a href={`tel:${b.phone}`} className="hover:text-primary">{b.phoneDisplay}</a></p>
+                  <p className="mt-1.5 flex gap-2 text-foreground/75"><Clock className="mt-0.5 h-4 w-4 shrink-0 text-primary" /><span className="text-xs">{b.hours.weekdays}<br/>{b.hours.saturday}</span></p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
 

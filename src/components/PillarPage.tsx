@@ -85,7 +85,7 @@ export function PillarPage(p: PillarPageProps) {
                 "Correa Dayco reforzada",
                 "Tensores y rodillos nuevos",
                 "Aceite + filtro homologado",
-                "Garantía 12 meses",
+                "Garantía 24 meses",
                 "Entrega el mismo día",
               ].map((b) => (
                 <li key={b} className="flex items-center gap-2.5">
@@ -141,7 +141,7 @@ export function PillarPage(p: PillarPageProps) {
             { icon: Award, t: `Especialistas ${p.pillar}`, d: "Herramientas y formación específica para este motor." },
             { icon: Clock, t: "Entrega el mismo día", d: "En 4–6 horas tu coche está listo." },
             { icon: Wrench, t: "Kit Dayco reforzado", d: "Recambios originales que respetan la garantía oficial." },
-            { icon: Shield, t: "Garantía 12 meses", d: "Sobre el trabajo realizado y los recambios montados." },
+            { icon: Shield, t: "Garantía 24 meses", d: "Sobre el trabajo realizado y los recambios montados." },
           ].map((v) => (
             <div key={v.t} className="rounded-xl border border-border bg-surface-elevated p-6">
               <v.icon className="h-10 w-10 text-primary" aria-hidden="true" />

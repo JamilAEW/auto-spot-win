@@ -8,8 +8,8 @@ import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 export const Route = createFileRoute("/garantia")({
   head: () => ({
     ...buildSeo({
-      title: "Garantía 12 Meses Cambio Correa | StopCars Madrid",
-      description: "Garantía de 12 meses o 20.000 km en todos los cambios de correa de distribución sumergida PureTech y EcoBoost. Trabajo y recambios cubiertos.",
+      title: "Garantía 24 Meses Cambio Correa | StopCars Madrid",
+      description: "Garantía de 24 meses o 40.000 km en todos los cambios de correa de distribución sumergida PureTech y EcoBoost. Trabajo y recambios cubiertos.",
       path: "/garantia",
     }),
     scripts: [ldScript(breadcrumbJsonLd([{ name: "Inicio", path: "/" }, { name: "Garantía", path: "/garantia" }]))],
@@ -24,7 +24,7 @@ function GarantiaPage() {
       <section className="bg-carbon">
         <div className="mx-auto max-w-7xl px-4 py-16 md:px-6 md:py-24">
           <p className="mb-4 inline-block rounded-full border border-primary/40 bg-primary/10 px-4 py-1 text-xs font-bold uppercase tracking-widest text-primary">Tranquilidad total</p>
-          <h1 className="font-display text-4xl font-black uppercase md:text-6xl">Garantía <span className="text-primary">12 meses</span> / 20.000 km</h1>
+          <h1 className="font-display text-4xl font-black uppercase md:text-6xl">Garantía <span className="text-primary">24 meses</span> / 40.000 km</h1>
           <p className="mt-5 max-w-2xl text-lg text-muted-foreground">Cubrimos por escrito el trabajo y los recambios. Si algo no está perfecto, lo solucionamos sin coste.</p>
         </div>
       </section>
@@ -32,7 +32,7 @@ function GarantiaPage() {
       <Section>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {[
-            { icon: Shield, t: "12 meses", d: "O 20.000 km, lo que ocurra primero." },
+            { icon: Shield, t: "24 meses", d: "O 40.000 km, lo que ocurra primero." },
             { icon: Wrench, t: "Trabajo y recambios", d: "Cubrimos mano de obra y todas las piezas montadas." },
             { icon: FileText, t: "Por escrito", d: "Garantía documentada en factura, oficial y trazable." },
             { icon: Clock, t: "Respuesta rápida", d: "Si surge un problema, te atendemos en 24–48 h." },

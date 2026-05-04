@@ -37,7 +37,7 @@ const INCLUYE = [
   "Aceite homologado por fabricante",
   "Filtro de aceite nuevo",
   "Mano de obra de mecánico especialista",
-  "Garantía 12 meses / 20.000 km",
+  "Garantía 24 meses / 40.000 km",
   "Factura detallada",
 ];
 
@@ -105,7 +105,7 @@ function PreciosPage() {
               <tr><td className="p-4">Cambio correa PureTech 1.2</td><td className="p-4">800 – 1.200 €</td><td className="p-4">500 – 700 €</td><td className="p-4 font-bold text-primary">399 €</td></tr>
               <tr><td className="p-4">Cambio correa EcoBoost 1.0</td><td className="p-4">700 – 1.100 €</td><td className="p-4">450 – 650 €</td><td className="p-4 font-bold text-primary">399 €</td></tr>
               <tr><td className="p-4">Diagnóstico previo</td><td className="p-4">50 – 80 €</td><td className="p-4">30 – 50 €</td><td className="p-4 font-bold text-primary">Gratis</td></tr>
-              <tr><td className="p-4">Garantía</td><td className="p-4">12 meses</td><td className="p-4">3–6 meses</td><td className="p-4 font-bold text-primary">12 meses</td></tr>
+              <tr><td className="p-4">Garantía</td><td className="p-4">24 meses</td><td className="p-4">3–6 meses</td><td className="p-4 font-bold text-primary">24 meses</td></tr>
               <tr><td className="p-4">Tiempo de entrega</td><td className="p-4">1–3 días</td><td className="p-4">1–2 días</td><td className="p-4 font-bold text-primary">Mismo día</td></tr>
             </tbody>
           </table>

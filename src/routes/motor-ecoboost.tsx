@@ -12,7 +12,7 @@ const FAQS = [
   },
   {
     q: "¿Cada cuánto cambiar la correa EcoBoost 1.0?",
-    a: "Ford recomienda 150.000 km o 10 años. Por experiencia, en uso urbano y con aceite no homologado conviene adelantarlo a 120.000 km. Si notas traqueteo o consumo de aceite, cámbiala ya.",
+    a: "Ford recomienda 150.000 km o 10 años. Por experiencia, en uso urbano y con aceite no homologado conviene adelantarlo a 140.000 km. Si notas traqueteo o consumo de aceite, cámbiala ya.",
   },
   {
     q: "¿Es el mismo problema que el PureTech?",
@@ -28,7 +28,7 @@ const FAQS = [
   },
   {
     q: "¿Qué garantía dais?",
-    a: "12 meses o 20.000 km sobre trabajo y recambios. Trabajamos con piezas originales para mantener la garantía oficial Ford.",
+    a: "24 meses o 40.000 km sobre trabajo y recambios. Trabajamos con piezas originales para mantener la garantía oficial Ford.",
   },
 ];
 
@@ -37,7 +37,7 @@ export const Route = createFileRoute("/motor-ecoboost")({
     ...buildSeo({
       title: "Taller Especialista Ford EcoBoost Madrid | Correa Húmeda 1.0 | StopCars",
       description:
-        "Especialistas en motor Ford EcoBoost 1.0 en Madrid. Cambio de correa sumergida (wet belt) con kit Dayco reforzado. Presupuesto cerrado 399 €. Garantía 12 meses.",
+        "Especialistas en motor Ford EcoBoost 1.0 en Madrid. Cambio de correa sumergida (wet belt) con kit Dayco reforzado. Presupuesto cerrado 399 €. Garantía 24 meses.",
       path: "/motor-ecoboost",
     }),
     scripts: [
@@ -45,7 +45,7 @@ export const Route = createFileRoute("/motor-ecoboost")({
       ldScript(
         serviceJsonLd(
           "Cambio de Correa de Distribución Húmeda EcoBoost",
-          "Cambio de correa de distribución sumergida para motor Ford EcoBoost 1.0. Fiesta, Focus, EcoSport. Kit Dayco, mano de obra y garantía 12 meses.",
+          "Cambio de correa de distribución sumergida para motor Ford EcoBoost 1.0. Fiesta, Focus, EcoSport. Kit Dayco, mano de obra y garantía 24 meses.",
           "399",
         ),
       ),
@@ -70,7 +70,7 @@ function EcoboostPillar() {
           Especialistas en motor <span className="text-primary">Ford EcoBoost 1.0</span> en Madrid
         </>
       }
-      heroLead={`Cambio de correa de distribución sumergida en Ford Fiesta, Focus y EcoSport. Kit Dayco reforzado, mano de obra y garantía 12 meses por ${SITE.promoPrice}.`}
+      heroLead={`Cambio de correa de distribución sumergida en Ford Fiesta, Focus y EcoSport. Kit Dayco reforzado, mano de obra y garantía 24 meses por ${SITE.promoPrice}.`}
       heroImage={heroImg}
       intervalKm="150.000 km"
       intervalYears="10 años"

@@ -11,7 +11,7 @@ export const Route = createFileRoute("/sobre-nosotros")({
   head: () => ({
     ...buildSeo({
       title: `Sobre Nosotros — Especialistas PureTech y EcoBoost | ${SITE.name} Madrid`,
-      description: "Conoce StopCars Madrid: taller especialista en correa de distribución sumergida PureTech y EcoBoost. Más de 100 cambios al año con garantía 12 meses.",
+      description: "Conoce StopCars Madrid: taller especialista en correa de distribución sumergida PureTech y EcoBoost. Más de 100 cambios al año con garantía 24 meses.",
       path: "/sobre-nosotros",
     }),
     scripts: [ldScript(breadcrumbJsonLd([{ name: "Inicio", path: "/" }, { name: "Sobre nosotros", path: "/sobre-nosotros" }]))],
@@ -40,7 +40,7 @@ function SobreNosotrosPage() {
               Empezamos detectando que cada vez más clientes traían coches con motor PureTech y EcoBoost con la misma avería: la correa de distribución sumergida fallaba mucho antes de lo previsto. Decidimos especializarnos.
             </p>
             <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
-              Hoy somos uno de los talleres con más experiencia en Madrid en este tipo de intervención. Trabajamos con kits Dayco reforzados, aceite homologado por fabricante y damos garantía de 12 meses por escrito.
+              Hoy somos uno de los talleres con más experiencia en Madrid en este tipo de intervención. Trabajamos con kits Dayco reforzados, aceite homologado por fabricante y damos garantía de 24 meses por escrito.
             </p>
           </div>
         </div>
@@ -51,7 +51,7 @@ function SobreNosotrosPage() {
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {[
             { icon: Award, t: "Especialización real", d: "Solo trabajamos motores PureTech y EcoBoost. No somos un multimarca genérico." },
-            { icon: Shield, t: "Garantía por escrito", d: "12 meses sobre trabajo y recambios. Cumplimos lo que firmamos." },
+            { icon: Shield, t: "Garantía por escrito", d: "24 meses sobre trabajo y recambios. Cumplimos lo que firmamos." },
             { icon: Wrench, t: "Recambios originales", d: "Trabajamos con Dayco y aceite homologado. Sin atajos." },
             { icon: Users, t: "Trato directo", d: "Atendemos en persona, sin intermediarios. Te explicamos qué hacemos y por qué." },
           ].map((v) => (
