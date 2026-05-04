@@ -95,15 +95,15 @@ function Home() {
               <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-primary">
                 <MapPin className="h-3.5 w-3.5" /> Madrid · Especialistas certificados
               </div>
-              <h1 className="font-display text-4xl font-black uppercase leading-[1.05] text-foreground md:text-6xl lg:text-7xl">
+              <h1 className="font-display text-3xl font-black uppercase leading-[1.05] text-foreground md:text-5xl lg:text-6xl">
                 Especialistas en{" "}
                 <span className="text-primary">Correa de Distribución Sumergida</span>{" "}
                 en Madrid
               </h1>
-              <p className="mt-6 max-w-2xl text-lg leading-relaxed text-foreground/85 md:text-xl">
+              <p className="mt-4 max-w-2xl text-base leading-relaxed text-foreground/85 md:text-lg">
                 Si tienes un Peugeot, Citroën, Opel o DS con motor PureTech 1.2 o un Ford con EcoBoost 1.0 y notas <strong>consumo de aceite, ruido al arrancar o el testigo de presión encendido</strong>, somos el taller que necesitas.
               </p>
-              <div className="mt-8">
+              <div className="mt-6">
                 <CTAButtons />
               </div>
 
