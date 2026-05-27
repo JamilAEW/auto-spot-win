@@ -35,7 +35,7 @@ const FAQS = [
 export const Route = createFileRoute("/motor-ecoboost")({
   head: () => ({
     ...buildSeo({
-      title: "Taller Especialista Ford EcoBoost Madrid | Correa Húmeda 1.0 | StopCars",
+      title: "Ford EcoBoost Madrid: Correa Húmeda | StopCars",
       description:
         "Especialistas en motor Ford EcoBoost 1.0 en Madrid. Cambio de correa sumergida (wet belt) con kit Dayco reforzado. Presupuesto cerrado 399 €. Garantía 24 meses.",
       path: "/motor-ecoboost",

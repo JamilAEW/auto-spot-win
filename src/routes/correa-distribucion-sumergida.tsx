@@ -40,7 +40,7 @@ const FAQS = [
 export const Route = createFileRoute("/correa-distribucion-sumergida")({
   head: () => ({
     ...buildSeo({
-      title: "Correa de Distribución Sumergida: Qué Es, Riesgos y Cambio | StopCars Madrid",
+      title: "Correa de Distribución Sumergida | StopCars Madrid",
       description:
         "Guía completa sobre la correa de distribución bañada en aceite (wet belt). Modelos afectados PureTech y EcoBoost, riesgos, mantenimiento y cambio en Madrid por 399 €.",
       path: "/correa-distribucion-sumergida",
