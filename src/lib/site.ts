@@ -70,7 +70,7 @@ export const SITE = {
   name: "StopCars",
   legalName: "StopCars Madrid",
   tagline: "Especialistas en Correa de Distribución Sumergida",
-  domain: "https://stopcarsmadrid.es",
+  domain: "https://www.stopcars.org",
 
   // Compatibilidad: datos de la sucursal principal (Usera)
   city: main.city,
