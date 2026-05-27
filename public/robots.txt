@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /api/
 
-Sitemap: https://stopcarsmadrid.es/sitemap.xml
+Sitemap: https://auto-spot-win.lovable.app/sitemap.xml
