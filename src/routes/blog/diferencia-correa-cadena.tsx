@@ -11,7 +11,7 @@ export const Route = createFileRoute("/blog/diferencia-correa-cadena")({
     const p = findPost(SLUG)!;
     return {
       ...buildSeo({
-        title: `${p.title} | Blog StopCars Madrid`,
+        title: `${p.title} | StopCars`,
         description: p.description,
         path: `/blog/${SLUG}`,
         type: "article",

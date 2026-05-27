@@ -1,0 +1,23 @@
+# StopCars Madrid
+
+> Taller especialista en cambio de correa de distribución sumergida (PureTech y EcoBoost) en Madrid. Kit Dayco reforzado, 399 € con garantía 24 meses. Sucursales en Usera y Alcorcón.
+
+## Pages
+
+- [Inicio](/): Servicio de cambio de correa sumergida PureTech / EcoBoost en Madrid.
+- [Motor PureTech](/motor-puretech): Información sobre el problema de la correa sumergida en motores PureTech 1.0 / 1.2.
+- [Motor EcoBoost](/motor-ecoboost): Cambio de correa húmeda en Ford EcoBoost 1.0.
+- [Correa de distribución sumergida](/correa-distribucion-sumergida): Guía técnica sobre la correa bañada en aceite.
+- [Correa baño de aceite](/correa-bano-aceite): Información complementaria sobre correas sumergidas.
+- [Precios](/precios): Tarifa cerrada por modelo (desde 399 €).
+- [Garantía](/garantia): Garantía de 24 meses en el cambio de correa.
+- [Recogida y entrega](/recogida-entrega): Servicio de recogida del vehículo en Madrid.
+- [Sobre nosotros](/sobre-nosotros): Equipo y trayectoria de StopCars Madrid.
+- [Contacto](/contacto): Teléfono, WhatsApp y direcciones de las sucursales.
+- [Blog](/blog): Guías sobre correa PureTech y EcoBoost.
+
+## Optional
+
+- [Aviso legal](/aviso-legal)
+- [Política de privacidad](/politica-privacidad)
+- [Política de cookies](/politica-cookies)

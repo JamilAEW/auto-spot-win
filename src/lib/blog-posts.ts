@@ -17,9 +17,9 @@ export type BlogPost = {
 export const BLOG_POSTS: BlogPost[] = [
   {
     slug: "problema-correa-puretech",
-    title: "El Problema de la Correa de Distribución PureTech: Qué Está Pasando con tu Motor",
+    title: "Problema Correa PureTech: Qué Pasa con tu Motor",
     description:
-      "Análisis completo del problema de la correa sumergida PureTech 1.0 y 1.2: por qué se desgasta, modelos afectados y cómo evitar averías de miles de euros.",
+      "Análisis completo del problema de la correa sumergida PureTech 1.0 y 1.2: por qué se desgasta, modelos afectados y cómo evitar averías.",
     excerpt:
       "Si tienes un Peugeot, Citroën, Opel o DS con motor PureTech, debes saber esto sobre la correa de distribución bañada en aceite.",
     category: "PureTech",
@@ -29,7 +29,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "sintomas-correa-puretech",
-    title: "Síntomas de Correa PureTech Rota o Desgastada: 7 Señales que NO Debes Ignorar",
+    title: "Síntomas de Correa PureTech: 7 Señales Clave",
     description:
       "Aprende a identificar los 7 síntomas más comunes de fallo en la correa de distribución PureTech antes de que rompa el motor.",
     excerpt:
@@ -41,7 +41,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "cuando-cambiar-correa-puretech",
-    title: "¿Cuándo Cambiar la Correa de Distribución PureTech? Intervalos y Factores de Riesgo",
+    title: "¿Cuándo Cambiar la Correa PureTech? Guía",
     description:
       "Guía definitiva con intervalos en km y años para cambiar la correa PureTech según uso urbano, mixto o autovía.",
     excerpt:
@@ -53,7 +53,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "precio-correa-puretech-2025",
-    title: "Precio del Cambio de Correa PureTech en 2026: Comparativa Talleres Madrid",
+    title: "Precio Correa PureTech 2026 en Madrid",
     description:
       "Cuánto cuesta cambiar la correa de distribución PureTech en Madrid: desglose por modelo, comparativa concesionario vs taller especialista.",
     excerpt:
@@ -65,7 +65,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "garantia-stellantis-puretech",
-    title: "Garantía Extendida Stellantis PureTech: Cómo Reclamar Paso a Paso",
+    title: "Garantía Stellantis PureTech: Cómo Reclamar",
     description:
       "Stellantis ha extendido la garantía del motor PureTech. Te explicamos qué cubre, requisitos y cómo reclamarla con éxito.",
     excerpt:
@@ -77,7 +77,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "ecoboost-correa-humeda",
-    title: "Ford EcoBoost: La Correa Húmeda que También Falla (Y Nadie te Cuenta)",
+    title: "Ford EcoBoost: La Correa Húmeda que Falla",
     description:
       "El motor Ford EcoBoost 1.0 monta la misma correa sumergida que el PureTech. Riesgos, modelos afectados y mantenimiento correcto.",
     excerpt:
@@ -89,7 +89,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "consumo-aceite-puretech",
-    title: "Consumo de Aceite Anormal en Motor PureTech: Causas y Soluciones",
+    title: "Consumo de Aceite Anormal en PureTech",
     description:
       "Si tu PureTech consume más aceite del normal, puede ser síntoma de correa desgastada. Aprende a diagnosticarlo y solucionarlo.",
     excerpt:
@@ -101,7 +101,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "traqueteo-arranque-puretech",
-    title: "Traqueteo al Arrancar el Motor PureTech: Causas Reales y Cómo Actuar",
+    title: "Traqueteo al Arrancar PureTech: Causas",
     description:
       "El traqueteo en frío al arrancar es uno de los principales síntomas de correa PureTech desgastada. Diagnóstico y solución.",
     excerpt:
@@ -113,7 +113,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "modelos-afectados-puretech",
-    title: "Lista Completa de Modelos PureTech Afectados por la Correa Sumergida (2014-2023)",
+    title: "Modelos PureTech Afectados (2014-2023)",
     description:
       "Listado actualizado de todos los modelos Peugeot, Citroën, Opel y DS afectados por el problema de la correa de distribución PureTech.",
     excerpt:
@@ -125,13 +125,13 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "diferencia-correa-cadena",
-    title: "Correa de Distribución vs Cadena: Diferencias, Ventajas y Cuál es Mejor",
+    title: "Correa vs Cadena: Diferencias y Cuál Elegir",
     description:
       "Diferencias entre correa y cadena de distribución, por qué los motores modernos usan correa sumergida y cómo afecta al mantenimiento.",
     excerpt:
       "¿Correa o cadena? Te explicamos las diferencias técnicas, los costes de mantenimiento y por qué los motores PureTech montan correa.",
     category: "Mantenimiento",
-    pillar: "/correa-distribucion-sumergida",
+    pillar: "/motor-puretech",
     datePublished: "2026-04-02",
     readingMinutes: 6,
   },

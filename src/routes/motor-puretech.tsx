@@ -35,7 +35,7 @@ const FAQS = [
 export const Route = createFileRoute("/motor-puretech")({
   head: () => ({
     ...buildSeo({
-      title: "Especialistas Motor PureTech Madrid | Correa Sumergida 1.2 | StopCars",
+      title: "Motor PureTech Madrid: Correa Sumergida | StopCars",
       description:
         "Taller especialista en motor PureTech 1.0 y 1.2 en Madrid. Cambio de correa de distribución sumergida con kit Dayco reforzado. Presupuesto cerrado 399 €. Garantía 24 meses.",
       path: "/motor-puretech",
