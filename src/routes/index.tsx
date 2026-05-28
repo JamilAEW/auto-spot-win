@@ -33,7 +33,7 @@ const HOME_FAQS = [
   },
   {
     q: "¿Cuánto tarda el cambio de correa de distribución?",
-    a: "Entregamos tu coche el mismo día. La intervención dura entre 4 y 6 horas según el modelo. Si nos lo dejas por la mañana, lo recoges por la tarde.",
+    a: "Depende del motor: en PureTech entregamos el coche el mismo día (4-6 horas). En EcoBoost necesitamos 2 días de trabajo porque la intervención es más compleja e incluye la sustitución de la bomba de agua.",
   },
   {
     q: "¿Qué garantía ofrecéis?",
@@ -52,13 +52,13 @@ const HOME_FAQS = [
 const PROCESO = [
   { step: "1", title: "Diagnóstico gratuito", desc: "Analizamos tu vehículo y te confirmamos si la correa necesita cambio." },
   { step: "2", title: "Presupuesto cerrado", desc: "Te damos un precio cerrado por escrito. Sin sorpresas ni extras." },
-  { step: "3", title: "Cambio el mismo día", desc: "En 4–6 horas tu coche está listo. Trabajamos con kit Dayco reforzado." },
+  { step: "3", title: "Cambio rápido", desc: "PureTech el mismo día (4–6 h). EcoBoost en 2 días con bomba de agua incluida." },
   { step: "4", title: "Garantía y entrega", desc: "24 meses de garantía. Te entregamos el coche con factura detallada." },
 ];
 
 const VENTAJAS = [
   { icon: Award, title: "Especialistas PureTech", desc: "Experiencia y herramientas específicas para motores 1.2 PureTech y 1.0 EcoBoost." },
-  { icon: Clock, title: "Más rápido", desc: "Entregamos tu coche en menos de 1 día. Mantenimiento exprés sin esperas." },
+  { icon: Clock, title: "Tiempos claros", desc: "PureTech el mismo día. EcoBoost en 2 días de trabajo con bomba de agua incluida." },
   { icon: Wrench, title: "El precio más competitivo", desc: "Menos de la mitad que en concesionario. Presupuesto cerrado sin sorpresas." },
   { icon: Shield, title: "Trabajo garantizado", desc: "24 meses o 40.000 km de garantía. Recambios Dayco originales reforzados." },
 ];
