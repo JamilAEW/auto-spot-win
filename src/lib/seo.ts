@@ -70,32 +70,35 @@ export const faqJsonLd = (faqs: { q: string; a: string }[]) => ({
   })),
 });
 
-export const serviceJsonLd = (name: string, description: string, price = "399") => ({
-  "@context": "https://schema.org",
-  "@type": "Service",
-  name,
-  description,
-  provider: {
-    "@type": "AutoRepair",
-    name: SITE.legalName,
-    telephone: SITE.phone,
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: SITE.address,
-      addressLocality: SITE.city,
-      addressRegion: SITE.region,
-      postalCode: SITE.postalCode,
-      addressCountry: SITE.country,
-    },
-  },
-  areaServed: { "@type": "State", name: SITE.region },
-  offers: {
+export const serviceJsonLd = (name: string, description: string, price?: string) => {
+  const offers: Record<string, unknown> = {
     "@type": "Offer",
     priceCurrency: "EUR",
-    price,
     availability: "https://schema.org/InStock",
-  },
-});
+  };
+  if (price) offers.price = price;
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name,
+    description,
+    provider: {
+      "@type": "AutoRepair",
+      name: SITE.legalName,
+      telephone: SITE.phone,
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: SITE.address,
+        addressLocality: SITE.city,
+        addressRegion: SITE.region,
+        postalCode: SITE.postalCode,
+        addressCountry: SITE.country,
+      },
+    },
+    areaServed: { "@type": "State", name: SITE.region },
+    offers,
+  };
+};
 
 export const autoRepairJsonLd = () => ({
   "@context": "https://schema.org",
