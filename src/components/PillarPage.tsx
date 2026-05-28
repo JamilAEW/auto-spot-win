@@ -84,9 +84,10 @@ export function PillarPage(p: PillarPageProps) {
               {[
                 "Correa Dayco reforzada",
                 "Tensores y rodillos nuevos",
+                ...(p.pillar === "EcoBoost" ? ["Bomba de agua incluida"] : []),
                 "Aceite + filtro homologado",
                 "Garantía 24 meses",
-                "Entrega el mismo día",
+                p.pillar === "EcoBoost" ? "2 días de trabajo" : "Entrega el mismo día",
               ].map((b) => (
                 <li key={b} className="flex items-center gap-2.5">
                   <CheckCircle2 className="h-4 w-4 shrink-0 text-primary" />
@@ -139,8 +140,10 @@ export function PillarPage(p: PillarPageProps) {
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {[
             { icon: Award, t: `Especialistas ${p.pillar}`, d: "Herramientas y formación específica para este motor." },
-            { icon: Clock, t: "Entrega el mismo día", d: "En 4–6 horas tu coche está listo." },
-            { icon: Wrench, t: "Kit Dayco reforzado", d: "Recambios originales que respetan la garantía oficial." },
+            p.pillar === "EcoBoost"
+              ? { icon: Clock, t: "2 días de trabajo", d: "Intervención completa con bomba de agua incluida." }
+              : { icon: Clock, t: "Entrega el mismo día", d: "En 4–6 horas tu coche está listo." },
+            { icon: Wrench, t: "Kit Dayco reforzado", d: p.pillar === "EcoBoost" ? "Correa, tensores, rodillos y bomba de agua originales." : "Recambios originales que respetan la garantía oficial." },
             { icon: Shield, t: "Garantía 24 meses", d: "Sobre el trabajo realizado y los recambios montados." },
           ].map((v) => (
             <div key={v.t} className="rounded-xl border border-border bg-surface-elevated p-6">
@@ -197,7 +200,7 @@ export function PillarPage(p: PillarPageProps) {
             ¿Listo para cambiar tu correa <span className="text-primary">{p.pillar}</span>?
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            Presupuesto cerrado en 5 minutos. Cambio el mismo día.
+            Presupuesto cerrado en 5 minutos. {p.pillar === "EcoBoost" ? "Entrega en 2 días hábiles, bomba de agua incluida." : "Cambio el mismo día."}
           </p>
           <div className="mt-8 flex justify-center">
             <CTAButtons />
