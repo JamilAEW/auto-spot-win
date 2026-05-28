@@ -34,7 +34,7 @@ export const articleBodies: Record<string, () => React.ReactNode> = {
       </p>
       <h2>¿Qué puedes hacer hoy?</h2>
       <p>
-        La única forma sensata de proteger el motor es <strong>cambiar la correa preventivamente</strong> con un kit reforzado Dayco, mucho antes de los 100.000 km que recomienda el fabricante. En <Link to="/motor-puretech">StopCars Madrid</Link> hacemos el cambio completo por <strong>999 €</strong>.
+        La única forma sensata de proteger el motor es <strong>cambiar la correa preventivamente</strong> con un kit reforzado Dayco, mucho antes de los 100.000 km que recomienda el fabricante. En <Link to="/motor-puretech">StopCars Madrid</Link> hacemos el cambio completo por <strong>399 €</strong>.
       </p>
     </>
   ),
@@ -127,7 +127,7 @@ export const articleBodies: Record<string, () => React.ReactNode> = {
       </p>
       <h2>Taller especialista (StopCars)</h2>
       <p>
-        <strong>999 € cerrado</strong> con IVA, mano de obra, kit Dayco reforzado, aceite homologado y filtro nuevo. Garantía 24 meses. Entrega el mismo día.
+        <strong>399 € cerrado</strong> con IVA, mano de obra, kit Dayco reforzado, aceite homologado y filtro nuevo. Garantía 24 meses. Entrega el mismo día.
       </p>
       <h2>¿Por qué la diferencia?</h2>
       <ul>
@@ -210,7 +210,7 @@ export const articleBodies: Record<string, () => React.ReactNode> = {
       </p>
       <h2>Cambio en taller especialista</h2>
       <p>
-        En <Link to="/motor-ecoboost">StopCars Madrid</Link> cambiamos correa EcoBoost por <strong>999 €</strong> con kit Dayco reforzado, aceite homologado y garantía 24 meses. Misma calidad y mejor precio que un concesionario.
+        En <Link to="/motor-ecoboost">StopCars Madrid</Link> cambiamos correa EcoBoost por <strong>399 €</strong> con kit Dayco reforzado, aceite homologado y garantía 24 meses. Misma calidad y mejor precio que un concesionario.
       </p>
     </>
   ),
@@ -275,7 +275,7 @@ export const articleBodies: Record<string, () => React.ReactNode> = {
         No es lo recomendable. Si la correa está degradada, los <strong>fragmentos pueden estar ya en el circuito</strong> de aceite. Hay que cambiar correa + tensores + aceite + filtro y, en muchos casos, comprobar bomba de aceite.
       </p>
       <p>
-        En <Link to="/motor-puretech">StopCars Madrid</Link> hacemos el cambio completo por 999 €.
+        En <Link to="/motor-puretech">StopCars Madrid</Link> hacemos el cambio completo por 399 €.
       </p>
     </>
   ),
@@ -347,7 +347,7 @@ export const articleBodies: Record<string, () => React.ReactNode> = {
         <tbody>
           <tr><td>Correa seca</td><td>80–120k km</td><td>300–600 €</td><td>Medio</td></tr>
           <tr><td>Cadena</td><td>Sin programa</td><td>1.500–3.000 €</td><td>Bajo / Alto si falla</td></tr>
-          <tr><td>Correa sumergida</td><td>100–150k km</td><td>999–1.200 €</td><td>Alto si no se previene</td></tr>
+          <tr><td>Correa sumergida</td><td>100–150k km</td><td>399–1.200 €</td><td>Alto si no se previene</td></tr>
         </tbody>
       </table>
       <h2>¿Cuál es mejor?</h2>

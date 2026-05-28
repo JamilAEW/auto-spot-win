@@ -11,13 +11,13 @@ export const Route = createFileRoute("/citroen-c3-puretech-madrid")({
     const faqs = modelFaqs(m);
     return {
       ...buildSeo({
-        title: "Cambio Correa Citroën C3 PureTech Madrid | 999 € | StopCars",
-        description: "Taller especialista en Citroën C3 PureTech 1.2 en Madrid. Cambio de correa de distribución sumergida con kit Dayco reforzado por 999 € con IVA y mano de obra. Garantía 24 meses. Entrega el mismo día.",
+        title: "Cambio Correa Citroën C3 PureTech Madrid | 399 € | StopCars",
+        description: "Taller especialista en Citroën C3 PureTech 1.2 en Madrid. Cambio de correa de distribución sumergida con kit Dayco reforzado por 399 € con IVA y mano de obra. Garantía 24 meses. Entrega el mismo día.",
         path: `/${SLUG}`,
       }),
       scripts: [
         ldScript(faqJsonLd(faqs)),
-        ldScript(serviceJsonLd(`Cambio Correa Distribución ${m.brand} ${m.model}`, `Cambio de correa sumergida en ${m.brand} ${m.model} con motor ${m.engine} en Madrid.`, "999")),
+        ldScript(serviceJsonLd(`Cambio Correa Distribución ${m.brand} ${m.model}`, `Cambio de correa sumergida en ${m.brand} ${m.model} con motor ${m.engine} en Madrid.`, "399")),
         ldScript(breadcrumbJsonLd([
           { name: "Inicio", path: "/" },
           { name: "Motor PureTech", path: "/motor-puretech" },

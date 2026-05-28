@@ -95,7 +95,7 @@ export const SITE = {
   },
   ga4: "G-XXXXXXXXXX",
 
-  promoPrice: "999,00 €",
+  promoPrice: "399,00 €",
 };
 
 export const whatsappUrl = (msg?: string, whatsapp = SITE.whatsapp) =>

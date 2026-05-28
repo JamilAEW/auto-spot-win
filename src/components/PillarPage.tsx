@@ -77,7 +77,7 @@ export function PillarPage(p: PillarPageProps) {
               Cambio de correa {p.pillar}
             </p>
             <h2 className="mt-2 font-display text-6xl font-black md:text-7xl">
-              999<span className="text-2xl text-primary">,00€</span>
+              399<span className="text-2xl text-primary">,00€</span>
             </h2>
             <p className="mt-2 text-sm text-muted-foreground">IVA y mano de obra incluidos</p>
             <ul className="mt-5 space-y-2.5 text-sm">

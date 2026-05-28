@@ -8,7 +8,7 @@ import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { SITE } from "@/lib/site";
 
 const FAQS = [
-  { q: "¿El precio incluye IVA?", a: "Sí. 999 € es el precio final con IVA, mano de obra y todos los recambios incluidos." },
+  { q: "¿El precio incluye IVA?", a: "Sí. 399 € es el precio final con IVA, mano de obra y todos los recambios incluidos." },
   { q: "¿Hay sorpresas o extras?", a: "No. Te damos presupuesto cerrado por escrito antes de empezar. Si surge algo adicional, te llamamos para autorizarlo." },
   { q: "¿Qué formas de pago aceptáis?", a: "Efectivo y tarjeta de crédito/débito. Posibilidad de financiación a 3, 6 o 12 meses sin intereses." },
   { q: "¿Hacéis factura?", a: "Sí, factura detallada con todos los recambios y mano de obra desglosados. Útil para garantías y reclamaciones." },
@@ -18,7 +18,7 @@ export const Route = createFileRoute("/precios")({
   head: () => ({
     ...buildSeo({
       title: `Precio Cambio Correa Distribución PureTech Madrid | ${SITE.name}`,
-      description: "Precio cerrado 999 € para el cambio de correa de distribución sumergida PureTech en Madrid. EcoBoost bajo presupuesto personalizado. IVA, mano de obra, kit Dayco y aceite incluidos.",
+      description: "Precio cerrado 399 € para el cambio de correa de distribución sumergida PureTech en Madrid. EcoBoost bajo presupuesto personalizado. IVA, mano de obra, kit Dayco y aceite incluidos.",
       path: "/precios",
     }),
     scripts: [
@@ -61,7 +61,7 @@ function PreciosPage() {
       <Section>
         <div className="mx-auto max-w-3xl rounded-2xl border border-primary/40 bg-surface p-8 shadow-glow md:p-12">
           <p className="font-display text-sm font-bold uppercase tracking-widest text-primary">Cambio completo</p>
-          <h2 className="mt-3 font-display text-7xl font-black md:text-8xl">999<span className="text-3xl text-primary">,00€</span></h2>
+          <h2 className="mt-3 font-display text-7xl font-black md:text-8xl">399<span className="text-3xl text-primary">,00€</span></h2>
           <p className="mt-2 inline-block rounded-md bg-destructive px-3 py-1 text-xs font-bold uppercase tracking-wider text-destructive-foreground">IVA y mano de obra incluidos</p>
 
           <div className="mt-8 grid gap-8 md:grid-cols-2">
@@ -102,7 +102,7 @@ function PreciosPage() {
               </tr>
             </thead>
             <tbody className="divide-y divide-border">
-              <tr><td className="p-4">Cambio correa PureTech 1.2</td><td className="p-4">800 – 1.200 €</td><td className="p-4">500 – 700 €</td><td className="p-4 font-bold text-primary">999 €</td></tr>
+              <tr><td className="p-4">Cambio correa PureTech 1.2</td><td className="p-4">800 – 1.200 €</td><td className="p-4">500 – 700 €</td><td className="p-4 font-bold text-primary">399 €</td></tr>
               <tr><td className="p-4">Cambio correa EcoBoost 1.0</td><td className="p-4">700 – 1.100 €</td><td className="p-4">450 – 650 €</td><td className="p-4 font-bold text-primary">Consultar</td></tr>
               <tr><td className="p-4">Diagnóstico previo</td><td className="p-4">50 – 80 €</td><td className="p-4">30 – 50 €</td><td className="p-4 font-bold text-primary">Gratis</td></tr>
               <tr><td className="p-4">Garantía</td><td className="p-4">24 meses</td><td className="p-4">3–6 meses</td><td className="p-4 font-bold text-primary">24 meses</td></tr>
