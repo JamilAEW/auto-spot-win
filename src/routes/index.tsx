@@ -126,7 +126,7 @@ function Home() {
             <div className="relative">
               <div className="rounded-2xl border border-primary/30 bg-surface p-6 shadow-glow md:p-8">
                 <p className="font-display text-sm font-bold uppercase tracking-widest text-primary">
-                  Cambio Correa PureTech / EcoBoost
+                  Cambio Correa PureTech
                 </p>
                 <h2 className="mt-3 font-display text-7xl font-black leading-none text-foreground md:text-8xl">
                   399<span className="text-3xl text-primary">,00€</span>
