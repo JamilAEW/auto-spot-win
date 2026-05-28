@@ -1,6 +1,6 @@
 # StopCars Madrid
 
-> Taller especialista en cambio de correa de distribución sumergida (PureTech y EcoBoost) en Madrid. Kit Dayco reforzado, 999 € con garantía 24 meses. Sucursales en Usera y Alcorcón.
+> Taller especialista en cambio de correa de distribución sumergida (PureTech y EcoBoost) en Madrid. Kit Dayco reforzado, 399 € con garantía 24 meses. Sucursales en Usera y Alcorcón.
 
 ## Pages
 
@@ -9,7 +9,7 @@
 - [Motor EcoBoost](/motor-ecoboost): Cambio de correa húmeda en Ford EcoBoost 1.0.
 - [Correa de distribución sumergida](/correa-distribucion-sumergida): Guía técnica sobre la correa bañada en aceite.
 - [Correa baño de aceite](/correa-bano-aceite): Información complementaria sobre correas sumergidas.
-- [Precios](/precios): Tarifa cerrada por modelo (desde 999 €).
+- [Precios](/precios): Tarifa cerrada por modelo (desde 399 €).
 - [Garantía](/garantia): Garantía de 24 meses en el cambio de correa.
 - [Recogida y entrega](/recogida-entrega): Servicio de recogida del vehículo en Madrid.
 - [Sobre nosotros](/sobre-nosotros): Equipo y trayectoria de StopCars Madrid.

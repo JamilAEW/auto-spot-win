@@ -18,7 +18,7 @@ export function ModelPage({ model }: { model: ModelInfo }) {
   const FAQS = [
     {
       q: `¿Cuánto cuesta cambiar la correa del ${fullName} en Madrid?`,
-      a: `En StopCars Madrid el cambio de correa de tu ${fullName} con motor ${model.engine} cuesta 999 € con IVA, mano de obra, kit Dayco reforzado, aceite homologado y filtro nuevo. Garantía 24 meses incluida.`,
+      a: `En StopCars Madrid el cambio de correa de tu ${fullName} con motor ${model.engine} cuesta 399 € con IVA, mano de obra, kit Dayco reforzado, aceite homologado y filtro nuevo. Garantía 24 meses incluida.`,
     },
     {
       q: `¿Cada cuánto debo cambiar la correa del ${fullName}?`,
@@ -76,7 +76,7 @@ export function ModelPage({ model }: { model: ModelInfo }) {
                 Cambio correa {fullName}
               </p>
               <h2 className="mt-2 font-display text-6xl font-black md:text-7xl">
-                999<span className="text-2xl text-primary">,00€</span>
+                399<span className="text-2xl text-primary">,00€</span>
               </h2>
               <p className="mt-2 text-sm text-muted-foreground">IVA y mano de obra incluidos</p>
               <ul className="mt-5 space-y-2 text-sm">
@@ -166,7 +166,7 @@ export function ModelPage({ model }: { model: ModelInfo }) {
                 </tr>
                 <tr>
                   <td className="py-2 font-bold text-primary">StopCars especialista</td>
-                  <td className="py-2 text-right font-display text-2xl font-black text-primary">999 €</td>
+                  <td className="py-2 text-right font-display text-2xl font-black text-primary">399 €</td>
                 </tr>
               </tbody>
             </table>
@@ -209,7 +209,7 @@ export const modelFaqs = (m: ModelInfo) => {
   return [
     {
       q: `¿Cuánto cuesta cambiar la correa del ${fullName} en Madrid?`,
-      a: `999 € con IVA, mano de obra, kit Dayco reforzado, aceite homologado y filtro nuevo. Garantía 24 meses incluida.`,
+      a: `399 € con IVA, mano de obra, kit Dayco reforzado, aceite homologado y filtro nuevo. Garantía 24 meses incluida.`,
     },
     {
       q: `¿Cada cuánto debo cambiar la correa del ${fullName}?`,
