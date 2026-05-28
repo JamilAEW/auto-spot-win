@@ -76,10 +76,21 @@ export function PillarPage(p: PillarPageProps) {
             <p className="font-display text-xs font-bold uppercase tracking-widest text-primary">
               Cambio de correa {p.pillar}
             </p>
-            <h2 className="mt-2 font-display text-6xl font-black md:text-7xl">
-              399<span className="text-2xl text-primary">,00€</span>
-            </h2>
-            <p className="mt-2 text-sm text-muted-foreground">IVA y mano de obra incluidos</p>
+            {p.pillar === "EcoBoost" ? (
+              <>
+                <h2 className="mt-2 font-display text-5xl font-black md:text-6xl">
+                  Consultar
+                </h2>
+                <p className="mt-2 text-sm text-muted-foreground">Presupuesto personalizado según modelo</p>
+              </>
+            ) : (
+              <>
+                <h2 className="mt-2 font-display text-6xl font-black md:text-7xl">
+                  399<span className="text-2xl text-primary">,00€</span>
+                </h2>
+                <p className="mt-2 text-sm text-muted-foreground">IVA y mano de obra incluidos</p>
+              </>
+            )}
             <ul className="mt-5 space-y-2.5 text-sm">
               {[
                 "Correa Dayco reforzada",

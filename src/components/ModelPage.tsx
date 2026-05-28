@@ -18,7 +18,9 @@ export function ModelPage({ model }: { model: ModelInfo }) {
   const FAQS = [
     {
       q: `¿Cuánto cuesta cambiar la correa del ${fullName} en Madrid?`,
-      a: `En StopCars Madrid el cambio de correa de tu ${fullName} con motor ${model.engine} cuesta 399 € con IVA, mano de obra, kit Dayco reforzado, aceite homologado y filtro nuevo. Garantía 24 meses incluida.`,
+      a: model.pillar === "ecoboost"
+        ? `El cambio de correa del ${fullName} con motor ${model.engine} se realiza bajo presupuesto personalizado, ya que incluye bomba de agua nueva y requiere 2 días de trabajo. Contáctanos para una valoración sin compromiso con kit Dayco reforzado, aceite homologado y garantía 24 meses.`
+        : `En StopCars Madrid el cambio de correa de tu ${fullName} con motor ${model.engine} cuesta 399 € con IVA, mano de obra, kit Dayco reforzado, aceite homologado y filtro nuevo. Garantía 24 meses incluida.`,
     },
     {
       q: `¿Cada cuánto debo cambiar la correa del ${fullName}?`,
@@ -75,10 +77,21 @@ export function ModelPage({ model }: { model: ModelInfo }) {
               <p className="font-display text-xs font-bold uppercase tracking-widest text-primary">
                 Cambio correa {fullName}
               </p>
-              <h2 className="mt-2 font-display text-6xl font-black md:text-7xl">
-                399<span className="text-2xl text-primary">,00€</span>
-              </h2>
-              <p className="mt-2 text-sm text-muted-foreground">IVA y mano de obra incluidos</p>
+              {model.pillar === "ecoboost" ? (
+                <>
+                  <h2 className="mt-2 font-display text-5xl font-black md:text-6xl">
+                    Consultar
+                  </h2>
+                  <p className="mt-2 text-sm text-muted-foreground">Presupuesto personalizado según modelo</p>
+                </>
+              ) : (
+                <>
+                  <h2 className="mt-2 font-display text-6xl font-black md:text-7xl">
+                    399<span className="text-2xl text-primary">,00€</span>
+                  </h2>
+                  <p className="mt-2 text-sm text-muted-foreground">IVA y mano de obra incluidos</p>
+                </>
+              )}
               <ul className="mt-5 space-y-2 text-sm">
                 {[
                   `Kit Dayco específico para ${fullName}`,
@@ -166,7 +179,7 @@ export function ModelPage({ model }: { model: ModelInfo }) {
                 </tr>
                 <tr>
                   <td className="py-2 font-bold text-primary">StopCars especialista</td>
-                  <td className="py-2 text-right font-display text-2xl font-black text-primary">399 €</td>
+                  <td className="py-2 text-right font-display text-2xl font-black text-primary">{model.pillar === "ecoboost" ? "Consultar" : "399 €"}</td>
                 </tr>
               </tbody>
             </table>
@@ -209,7 +222,9 @@ export const modelFaqs = (m: ModelInfo) => {
   return [
     {
       q: `¿Cuánto cuesta cambiar la correa del ${fullName} en Madrid?`,
-      a: `399 € con IVA, mano de obra, kit Dayco reforzado, aceite homologado y filtro nuevo. Garantía 24 meses incluida.`,
+      a: m.pillar === "ecoboost"
+        ? `Presupuesto personalizado. Incluye bomba de agua nueva, kit Dayco reforzado, aceite homologado y filtro. Garantía 24 meses. 2 días de trabajo.`
+        : `399 € con IVA, mano de obra, kit Dayco reforzado, aceite homologado y filtro nuevo. Garantía 24 meses incluida.`,
     },
     {
       q: `¿Cada cuánto debo cambiar la correa del ${fullName}?`,
