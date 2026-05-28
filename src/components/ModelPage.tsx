@@ -18,7 +18,9 @@ export function ModelPage({ model }: { model: ModelInfo }) {
   const FAQS = [
     {
       q: `¿Cuánto cuesta cambiar la correa del ${fullName} en Madrid?`,
-      a: `En StopCars Madrid el cambio de correa de tu ${fullName} con motor ${model.engine} cuesta 399 € con IVA, mano de obra, kit Dayco reforzado, aceite homologado y filtro nuevo. Garantía 24 meses incluida.`,
+      a: model.pillar === "ecoboost"
+        ? `El cambio de correa del ${fullName} con motor ${model.engine} se realiza bajo presupuesto personalizado, ya que incluye bomba de agua nueva y requiere 2 días de trabajo. Contáctanos para una valoración sin compromiso con kit Dayco reforzado, aceite homologado y garantía 24 meses.`
+        : `En StopCars Madrid el cambio de correa de tu ${fullName} con motor ${model.engine} cuesta 399 € con IVA, mano de obra, kit Dayco reforzado, aceite homologado y filtro nuevo. Garantía 24 meses incluida.`,
     },
     {
       q: `¿Cada cuánto debo cambiar la correa del ${fullName}?`,
