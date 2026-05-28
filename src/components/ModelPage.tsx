@@ -179,7 +179,7 @@ export function ModelPage({ model }: { model: ModelInfo }) {
                 </tr>
                 <tr>
                   <td className="py-2 font-bold text-primary">StopCars especialista</td>
-                  <td className="py-2 text-right font-display text-2xl font-black text-primary">399 €</td>
+                  <td className="py-2 text-right font-display text-2xl font-black text-primary">{model.pillar === "ecoboost" ? "Consultar" : "399 €"}</td>
                 </tr>
               </tbody>
             </table>
