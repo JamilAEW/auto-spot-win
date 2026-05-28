@@ -29,7 +29,7 @@ const HOME_FAQS = [
   },
   {
     q: "¿Cuánto cuesta cambiar la correa PureTech en Madrid?",
-    a: "En StopCars Madrid el precio cerrado es 399 € con IVA y mano de obra incluidos. Incluye correa Dayco reforzada, tensores, rodillos, aceite homologado Stellantis y filtro nuevo. En concesionario el mismo trabajo cuesta entre 800 € y 1.200 €.",
+    a: "En StopCars Madrid el precio cerrado es 999 € con IVA y mano de obra incluidos. Incluye correa Dayco reforzada, tensores, rodillos, aceite homologado Stellantis y filtro nuevo. En concesionario el mismo trabajo cuesta entre 800 € y 1.200 €.",
   },
   {
     q: "¿Cuánto tarda el cambio de correa de distribución?",
@@ -129,7 +129,7 @@ function Home() {
                   Cambio Correa PureTech
                 </p>
                 <h2 className="mt-3 font-display text-7xl font-black leading-none text-foreground md:text-8xl">
-                  399<span className="text-3xl text-primary">,00€</span>
+                  999<span className="text-3xl text-primary">,00€</span>
                 </h2>
                 <p className="mt-2 inline-block rounded-md bg-destructive px-3 py-1 text-xs font-bold uppercase tracking-wider text-destructive-foreground">
                   IVA y mano de obra incluidos
@@ -202,7 +202,7 @@ function Home() {
                 { t: "La correa en aceite se desgasta más rápido", d: "El contacto continuo con aceite degrada el material y suelta partículas." },
                 { t: "Puede romperse sin previo aviso", d: "No hay síntomas claros antes del fallo en muchos casos." },
                 { t: "Su rotura puede dañar gravemente el motor", d: "Las válvulas chocan con los pistones y se destruye la culata." },
-                { t: "La reparación puede costar más de 3.000 €", d: "Sustituir el motor o reconstruirlo es muy caro. Prevenir cuesta 399 €." },
+                { t: "La reparación puede costar más de 3.000 €", d: "Sustituir el motor o reconstruirlo es muy caro. Prevenir cuesta 999 €." },
               ].map((it) => (
                 <li key={it.t} className="flex gap-4">
                   <AlertTriangle className="mt-1 h-6 w-6 shrink-0 text-primary" />
@@ -257,7 +257,7 @@ function Home() {
                 Cambio de Correa <span className="text-primary">PureTech</span> con correa sumergida
               </h2>
               <p className="mt-4 text-lg text-muted-foreground">
-                399,00 € — IVA y mano de obra incluidos. Entrega el mismo día. Garantía 24 meses.
+                999,00 € — IVA y mano de obra incluidos. Entrega el mismo día. Garantía 24 meses.
               </p>
               <div className="mt-6">
                 <CTAButtons />
@@ -266,7 +266,7 @@ function Home() {
             <div>
               <img
                 src={flyerCorrea}
-                alt="Promoción cambio correa distribución PureTech 399 € StopCars Madrid"
+                alt="Promoción cambio correa distribución PureTech 999 € StopCars Madrid"
                 width={1200}
                 height={1200}
                 loading="lazy"

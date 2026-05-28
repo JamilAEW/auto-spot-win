@@ -16,7 +16,7 @@ const FAQS = [
   },
   {
     q: "¿Cuánto cuesta el cambio en taller especialista?",
-    a: "En StopCars Madrid 399 € con IVA, mano de obra, kit Dayco reforzado, aceite homologado y filtro. En concesionario el mismo trabajo cuesta entre 800 € y 1.200 €.",
+    a: "En StopCars Madrid 999 € con IVA, mano de obra, kit Dayco reforzado, aceite homologado y filtro. En concesionario el mismo trabajo cuesta entre 800 € y 1.200 €.",
   },
   {
     q: "¿Por qué falla la correa PureTech?",
@@ -37,7 +37,7 @@ export const Route = createFileRoute("/motor-puretech")({
     ...buildSeo({
       title: "Motor PureTech Madrid: Correa Sumergida | StopCars",
       description:
-        "Taller especialista en motor PureTech 1.0 y 1.2 en Madrid. Cambio de correa de distribución sumergida con kit Dayco reforzado. Presupuesto cerrado 399 €. Garantía 24 meses.",
+        "Taller especialista en motor PureTech 1.0 y 1.2 en Madrid. Cambio de correa de distribución sumergida con kit Dayco reforzado. Presupuesto cerrado 999 €. Garantía 24 meses.",
       path: "/motor-puretech",
     }),
     scripts: [
@@ -46,7 +46,7 @@ export const Route = createFileRoute("/motor-puretech")({
         serviceJsonLd(
           "Cambio de Correa de Distribución Sumergida PureTech",
           "Cambio de correa de distribución bañada en aceite para motores PureTech 1.0 y 1.2 (Peugeot, Citroën, Opel, DS). Kit Dayco, mano de obra y garantía 24 meses.",
-          "399",
+          "999",
         ),
       ),
       ldScript(
@@ -111,7 +111,7 @@ function PuretechPillar() {
           </p>
           <p>
             Cambiar preventivamente la correa con un kit reforzado cuesta solo
-            <strong> 399 €</strong> en StopCars Madrid: amortiza el coste con la
+            <strong> 999 €</strong> en StopCars Madrid: amortiza el coste con la
             tranquilidad de no quedarte tirado y proteger el valor de tu coche.
           </p>
         </>
