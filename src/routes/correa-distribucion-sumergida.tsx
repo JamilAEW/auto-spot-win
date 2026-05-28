@@ -179,7 +179,7 @@ function CorreaSumergida() {
           <h2 className="font-display text-3xl font-black uppercase md:text-5xl">
             Cambia tu correa <span className="text-primary">hoy</span>
           </h2>
-          <p className="mt-4 text-lg text-muted-foreground">399 € · IVA y mano de obra incluidos · Entrega el mismo día</p>
+          <p className="mt-4 text-lg text-muted-foreground">Desde 399 € para PureTech · EcoBoost bajo presupuesto · Entrega el mismo día</p>
           <div className="mt-8 flex flex-wrap justify-center gap-3"><CTAButtons /><WhatsAppCTA label={`WhatsApp ${SITE.phoneDisplay}`} /></div>
         </div>
       </section>
