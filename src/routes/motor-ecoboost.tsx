@@ -20,7 +20,7 @@ const FAQS = [
   },
   {
     q: "¿Cuánto cuesta el cambio de correa EcoBoost?",
-    a: "En StopCars Madrid 399 € con IVA, mano de obra, correa reforzada Dayco, tensores, aceite y filtro. En concesionario Ford el coste suele superar los 900 €.",
+    a: "En StopCars Madrid ofrecemos presupuesto personalizado según modelo y estado del motor. En concesionario Ford el coste suele superar los 900 €.",
   },
   {
     q: "¿Atendéis Ford Fiesta, Focus y EcoSport?",
@@ -37,7 +37,7 @@ export const Route = createFileRoute("/motor-ecoboost")({
     ...buildSeo({
       title: "Ford EcoBoost Madrid: Correa Húmeda | StopCars",
       description:
-        "Especialistas en motor Ford EcoBoost 1.0 en Madrid. Cambio de correa sumergida (wet belt) con kit Dayco reforzado. Presupuesto cerrado 399 €. Garantía 24 meses.",
+        "Especialistas en motor Ford EcoBoost 1.0 en Madrid. Cambio de correa sumergida (wet belt) con kit Dayco reforzado. Presupuesto personalizado. Garantía 24 meses.",
       path: "/motor-ecoboost",
     }),
     scripts: [
@@ -46,7 +46,7 @@ export const Route = createFileRoute("/motor-ecoboost")({
         serviceJsonLd(
           "Cambio de Correa de Distribución Húmeda EcoBoost",
           "Cambio de correa de distribución sumergida para motor Ford EcoBoost 1.0. Fiesta, Focus, EcoSport. Kit Dayco, mano de obra y garantía 24 meses.",
-          "399",
+          undefined,
         ),
       ),
       ldScript(
@@ -70,7 +70,7 @@ function EcoboostPillar() {
           Especialistas en motor <span className="text-primary">Ford EcoBoost 1.0</span> en Madrid
         </>
       }
-      heroLead={`Cambio de correa de distribución sumergida en Ford Fiesta, Focus y EcoSport. Kit Dayco reforzado, mano de obra y garantía 24 meses por ${SITE.promoPrice}.`}
+      heroLead={`Cambio de correa de distribución sumergida en Ford Fiesta, Focus y EcoSport. Kit Dayco reforzado, mano de obra y garantía 24 meses.`}
       heroImage={heroImg}
       intervalKm="150.000 km"
       intervalYears="10 años"
@@ -106,9 +106,9 @@ function EcoboostPillar() {
             <strong>3.000 € a 5.000 €</strong> son habituales en concesionario.
           </p>
           <p>
-            El cambio preventivo en taller especialista por <strong>399 €</strong>
-            es la única forma sensata de proteger el motor y mantener el valor
-            del coche.
+            El cambio preventivo en taller especialista es la única forma sensata
+            de proteger el motor y mantener el valor del coche. Pide presupuesto
+            sin compromiso.
           </p>
         </>
       }

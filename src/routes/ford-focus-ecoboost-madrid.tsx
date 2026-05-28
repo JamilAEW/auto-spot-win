@@ -11,13 +11,13 @@ export const Route = createFileRoute("/ford-focus-ecoboost-madrid")({
     const faqs = modelFaqs(m);
     return {
       ...buildSeo({
-        title: "Cambio Correa Ford Focus EcoBoost Madrid | 399 € | StopCars",
-        description: "Taller especialista en Ford Focus EcoBoost 1.0 en Madrid. Cambio de correa de distribución sumergida con kit Dayco reforzado por 399 € con IVA y mano de obra. Garantía 24 meses. Entrega el mismo día.",
+        title: "Cambio Correa Ford Focus EcoBoost Madrid | StopCars",
+        description: "Taller especialista en Ford Focus EcoBoost 1.0 en Madrid. Cambio de correa de distribución sumergida con kit Dayco reforzado. Presupuesto personalizado. Garantía 24 meses. Entrega el mismo día.",
         path: `/${SLUG}`,
       }),
       scripts: [
         ldScript(faqJsonLd(faqs)),
-        ldScript(serviceJsonLd(`Cambio Correa Distribución ${m.brand} ${m.model}`, `Cambio de correa sumergida en ${m.brand} ${m.model} con motor ${m.engine} en Madrid.`, "399")),
+        ldScript(serviceJsonLd(`Cambio Correa Distribución ${m.brand} ${m.model}`, `Cambio de correa sumergida en ${m.brand} ${m.model} con motor ${m.engine} en Madrid.`, undefined)),
         ldScript(breadcrumbJsonLd([
           { name: "Inicio", path: "/" },
           { name: "Motor EcoBoost", path: "/motor-ecoboost" },
