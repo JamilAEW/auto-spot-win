@@ -222,7 +222,9 @@ export const modelFaqs = (m: ModelInfo) => {
   return [
     {
       q: `¿Cuánto cuesta cambiar la correa del ${fullName} en Madrid?`,
-      a: `399 € con IVA, mano de obra, kit Dayco reforzado, aceite homologado y filtro nuevo. Garantía 24 meses incluida.`,
+      a: m.pillar === "ecoboost"
+        ? `Presupuesto personalizado. Incluye bomba de agua nueva, kit Dayco reforzado, aceite homologado y filtro. Garantía 24 meses. 2 días de trabajo.`
+        : `399 € con IVA, mano de obra, kit Dayco reforzado, aceite homologado y filtro nuevo. Garantía 24 meses incluida.`,
     },
     {
       q: `¿Cada cuánto debo cambiar la correa del ${fullName}?`,
