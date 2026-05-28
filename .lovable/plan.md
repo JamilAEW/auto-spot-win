@@ -1,79 +1,56 @@
+El usuario quiere que en todas las páginas de EcoBoost se indique explícitamente:
+1. El trabajo dura **2 días de trabajo** (no "mismo día" como PureTech).
+2. Se **incluye la bomba de agua** en el servicio de EcoBoost (no en PureTech).
 
-# StopCars Madrid — Web especialista en Correa Sumergida (PureTech / EcoBoost)
+Esto requiere hacer condicionales en los componentes compartidos (`PillarPage`, `ModelPage`) y actualizar textos en páginas de ruta.
 
-Construimos el sitio completo descrito en tu brief, con identidad visual StopCars (negro + amarillo) y todo el SEO técnico necesario para posicionar #1 en Google España.
+### Cambios necesarios
 
-## Identidad visual
+**1. Componente `src/components/PillarPage.tsx`**
+- En el aside de precios (línea ~89), cambiar "Entrega el mismo día" a condicional:
+  - PureTech: "Entrega el mismo día"
+  - EcoBoost: "2 días de trabajo"
+- Añadir a la lista de "Incluye" del aside (línea ~84-95), solo para EcoBoost: "Bomba de agua incluida"
+- En la sección de ventajas (línea ~142), cambiar "En 4–6 horas tu coche está listo." a condicional:
+  - PureTech: "En 4–6 horas tu coche está listo."
+  - EcoBoost: "2 días de trabajo. Garantía de acabado profesional."
+- En el CTA final (línea ~200), cambiar "Cambio el mismo día." a condicional:
+  - PureTech: "Cambio el mismo día."
+  - EcoBoost: "Entrega en 2 días hábiles."
 
-- **Paleta**: fondo negro `#0A0A0A`, superficies `#141414`, amarillo señal `#FFD400` (acento principal), naranja `#E8700A` solo para CTAs de urgencia ("Presupuesto en 5 min", "Llamar ahora"), verde WhatsApp `#25D366`, blanco texto, rojo alerta `#CC2200`.
-- **Tipografía**: Google Fonts — **Outfit** (titulares bold/black, mayúsculas estilo flyer) + **Inter** (cuerpo).
-- **Logo StopCars**: extraído de los flyers que subiste; usado en header, footer y favicon.
-- **Imágenes**: flyers reutilizados como creatividades (hero promo 999 €, sección "Por qué importante", "Mejor opción"). Generamos imágenes complementarias (taller, motor PureTech, correa sumergida, kit Dayco) con IA al estilo de tus flyers.
+**2. Componente `src/components/ModelPage.tsx`**
+- En el aside de precios (línea ~86), cambiar "Entrega el mismo día" a condicional por pilar.
+- Añadir a la lista de beneficios del aside (línea ~81-92), solo para EcoBoost: "Bomba de agua nueva incluida"
+- En las FAQs internas (línea ~31), cambiar la respuesta de duración a condicional:
+  - PureTech: "Entre 4 y 6 horas. Si nos lo dejas por la mañana, lo recoges por la tarde."
+  - EcoBoost: "2 días de trabajo. Te informamos de la entrega al confirmar el presupuesto."
+- En el CTA final (línea ~186), cambiar "Cambio el mismo día" a condicional por pilar.
+- En `modelFaqs` (línea ~215), ajustar la respuesta de duración según pilar.
+- En la lista de "Qué incluye" (línea ~133-143), añadir "Bomba de agua nueva" solo para EcoBoost.
 
-## Datos del negocio (de los flyers)
+**3. Página `src/routes/motor-ecoboost.tsx`**
+- Añadir a `heroLead` una mención: "Duración: 2 días de trabajo."
+- Actualizar FAQ de garantía o añadir una nueva que mencione "Incluimos bomba de agua en el cambio de correa EcoBoost."
 
-- Nombre: **StopCars** · Ubicación: **Madrid** · WhatsApp/Teléfono: **+34 624 68 77 25**
-- Dirección, CP, email, horarios, redes → quedan como placeholders editables claramente marcados (los rellenamos cuando me los pases). Horarios por defecto: L–V 8:30–19:00, S 9:00–14:00.
+**4. Páginas de modelos EcoBoost (Focus, Fiesta, EcoSport)**
+- Actualizar la `description` en el `head()` de cada una para reemplazar "Entrega el mismo día" por "Entrega en 2 días hábiles".
 
-## Componentes globales (en todas las páginas)
+**5. Página `src/routes/precios.tsx`**
+- En la tabla comparativa (línea ~109), cambiar la fila "Tiempo de entrega" → columna StopCars:
+  - De: "Mismo día"
+  - A: "Mismo día (PureTech) / 2 días (EcoBoost)"
+- O mejor: separar en dos filas o poner "1-2 días según motor".
+- Añadir nota bajo la tabla: "El servicio EcoBoost incluye bomba de agua."
 
-- **Header** sticky: logo + nav (Inicio, PureTech, EcoBoost, Modelos ▾, Precios, Blog, Contacto) + botón naranja **"Presupuesto gratis"**.
-- **Footer** 4 columnas: NAP + horarios · Servicios (pilares + modelos) · Blog (últimos 3) · Legales + redes.
-- **WhatsApp flotante** verde, esquina inferior derecha, mensaje pre-rellenado.
-- **Breadcrumbs** con `BreadcrumbList` JSON-LD en páginas internas.
-- **Banner urgencia** en hero/intermedios (fondo naranja).
+**6. Página `src/routes/correa-distribucion-sumergida.tsx`**
+- En la FAQ de duración (línea ~32), diferenciar:
+  - "Entregamos el coche el mismo día para PureTech (4-6h). En EcoBoost el trabajo requiere 2 días de trabajo."
+- En la lista del kit Dayco (línea ~148-165), añadir una viñeta condicional: "Bomba de agua incluida (EcoBoost)" o similar.
 
-## Mapa completo de rutas (40+)
+**7. Página `src/routes/index.tsx`**
+- En `PROCESO` (línea ~55), cambiar "Cambio el mismo día" por "Cambio en 1-2 días según motor".
+- En `VENTAJAS` (línea ~61), cambiar "Entregamos tu coche en menos de 1 día." por "Entrega rápida: mismo día o 2 días según motor."
+- En la FAQ de duración (línea ~36), diferenciar PureTech (mismo día) y EcoBoost (2 días).
 
-**Core**: `/`, `/contacto`, `/precios`, `/garantia`, `/recogida-entrega`, `/sobre-nosotros`, `/aviso-legal`, `/politica-privacidad`, `/politica-cookies`.
-
-**Pilares**: `/motor-puretech`, `/motor-ecoboost`, `/correa-distribucion-sumergida` (con redirect 301 desde `/correa-bano-aceite`).
-
-**Modelos (13)**: Peugeot 208/308/2008/3008, Citroën C3/C4/C4 Cactus, Opel Corsa/Grandland, DS3/DS7, Ford Fiesta/Focus/EcoSport — todos `…-puretech-madrid` o `…-ecoboost-madrid`.
-
-**Blog (10)**: índice `/blog` + los 10 artículos del brief (problema, síntomas, cuándo cambiar, precio 2025, garantía Stellantis, EcoBoost, consumo aceite, traqueteo, modelos afectados, correa vs cadena).
-
-Cada ruta tendrá su propio `<head>`: title, description, canonical, og:title/description/image, robots.
-
-## Contenido por página (siguiendo el brief al pie de la letra)
-
-- **H1 exactos** del brief, jerarquía H2/H3 respetada, copy completo (hero, urgencia, modelos afectados, proceso, FAQs, mapa, formulario).
-- **Tablas** de modelos, precios, intervalos km/años.
-- **CTAs duplicados** (presupuesto + llamar) en hero, intermedio y cierre.
-- **Enlazado interno** obligatorio: Home → pilares → modelos → blog → pilares (mapa de enlaces del brief).
-- **Formulario de contacto** (nombre, teléfono, modelo, km, mensaje) con validación; envíos por email vía Resend (Lovable Cloud).
-
-## SEO técnico
-
-- `<html lang="es">`, sitemap.xml dinámico con todas las URLs, robots.txt (Allow + Sitemap), canonical por página.
-- **Schema JSON-LD**: `AutoRepair` (Home con NAP, geo, horarios, aggregateRating, sameAs) + `Service` (pilares + modelos) + `FAQPage` (Home + pilares) + `BreadcrumbList` (todas internas) + `Article` (blog) + `Organization` (footer).
-- Redirect 301 `/correa-bano-aceite` → `/correa-distribucion-sumergida`.
-- Imágenes WebP, lazy loading, `<Image>` optimizado, fuentes precargadas. Targets: LCP <2.5s, CLS <0.1, INP <200ms.
-- Google Analytics 4 listo (placeholder de Measurement ID).
-
-## Plan de ejecución
-
-1. **Fundamentos**: tema (negro/amarillo), tipografía Outfit+Inter, logo extraído, layout root (header/footer/WhatsApp/breadcrumbs), helpers SEO (`<Head>` por ruta, sitemap, robots), formulario + email.
-2. **Home**: hero promo 999 €, urgencia, modelos afectados (grid con logos marca), proceso, garantía, FAQ, mapa, formulario, schema AutoRepair + FAQ.
-3. **Pilares** PureTech, EcoBoost y wet-belt genérico (contenido completo, tablas, FAQ, schema Service + FAQ).
-4. **13 páginas de modelo** generadas con plantilla del brief, contenido específico por modelo (motor, años afectados, síntomas, precio).
-5. **Blog**: índice + 10 artículos largos con schema Article y enlaces internos al pilar correspondiente.
-6. **Páginas de soporte**: precios, garantía, recogida-entrega, sobre-nosotros, contacto, 3 legales.
-7. **QA final**: checklist del brief (sitemap, robots, schema válido, breadcrumbs, WhatsApp, OG tags, mobile, redirect 301).
-
-## Detalles técnicos
-
-- TanStack Start (SSR nativo, equivalente a Next.js para SEO de Google).
-- File-based routing en `src/routes/` (cada URL = un archivo `.tsx` con su `head()`).
-- Tailwind v4 con tokens custom en `src/styles.css` para la paleta StopCars.
-- Lovable Cloud para el endpoint del formulario (envío de email vía Resend) — sin login de usuarios.
-- Sitemap servido desde `src/routes/api/sitemap[.]xml.ts`, robots desde `public/robots.txt`.
-
-## Lo que NO entra (avísame si lo quieres)
-
-- Reservas online con calendario.
-- Área cliente / login.
-- Pasarela de pago (paga en taller).
-- Multi-idioma (solo es-ES).
-
-Cuando apruebes, empiezo por los fundamentos + Home y voy avanzando por bloques. Te iré mostrando avances para que valides antes de pasar a modelos y blog.
+### Nota técnica
+Los componentes `PillarPage` y `ModelPage` reciben `model.pillar` o la prop `pillar`, por lo que la lógica condicional es trivial: `pillar === "EcoBoost"` vs `pillar === "PureTech"`.

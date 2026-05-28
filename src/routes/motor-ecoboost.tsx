@@ -20,7 +20,15 @@ const FAQS = [
   },
   {
     q: "¿Cuánto cuesta el cambio de correa EcoBoost?",
-    a: "En StopCars Madrid ofrecemos presupuesto personalizado según modelo y estado del motor. En concesionario Ford el coste suele superar los 900 €.",
+    a: "En StopCars Madrid ofrecemos presupuesto personalizado según modelo y estado del motor. Incluimos bomba de agua nueva. En concesionario Ford el coste suele superar los 900 €.",
+  },
+  {
+    q: "¿Se incluye la bomba de agua?",
+    a: "Sí. En el servicio EcoBoost incluimos la sustitución de la bomba de agua junto con la correa, tensores y rodillos. Es una pieza crítica que conviene renovar en la misma intervención.",
+  },
+  {
+    q: "¿Cuánto tarda el cambio en un Ford EcoBoost?",
+    a: "2 días de trabajo. La intervención en motor EcoBoost requiere desmontaje adicional y sustitución de la bomba de agua, por lo que necesitamos 2 jornadas para entregar el coche con todas las garantías.",
   },
   {
     q: "¿Atendéis Ford Fiesta, Focus y EcoSport?",
@@ -37,7 +45,7 @@ export const Route = createFileRoute("/motor-ecoboost")({
     ...buildSeo({
       title: "Ford EcoBoost Madrid: Correa Húmeda | StopCars",
       description:
-        "Especialistas en motor Ford EcoBoost 1.0 en Madrid. Cambio de correa sumergida (wet belt) con kit Dayco reforzado. Presupuesto personalizado. Garantía 24 meses.",
+        "Especialistas en motor Ford EcoBoost 1.0 en Madrid. Cambio de correa sumergida (wet belt) con kit Dayco reforzado y bomba de agua incluida. 2 días de trabajo. Garantía 24 meses.",
       path: "/motor-ecoboost",
     }),
     scripts: [
@@ -70,7 +78,7 @@ function EcoboostPillar() {
           Especialistas en motor <span className="text-primary">Ford EcoBoost 1.0</span> en Madrid
         </>
       }
-      heroLead={`Cambio de correa de distribución sumergida en Ford Fiesta, Focus y EcoSport. Kit Dayco reforzado, mano de obra y garantía 24 meses.`}
+      heroLead={`Cambio de correa de distribución sumergida en Ford Fiesta, Focus y EcoSport. Kit Dayco reforzado y bomba de agua incluida. 2 días de trabajo. Garantía 24 meses.`}
       heroImage={heroImg}
       intervalKm="150.000 km"
       intervalYears="10 años"

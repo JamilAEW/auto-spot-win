@@ -106,7 +106,8 @@ function PreciosPage() {
               <tr><td className="p-4">Cambio correa EcoBoost 1.0</td><td className="p-4">700 – 1.100 €</td><td className="p-4">450 – 650 €</td><td className="p-4 font-bold text-primary">Consultar</td></tr>
               <tr><td className="p-4">Diagnóstico previo</td><td className="p-4">50 – 80 €</td><td className="p-4">30 – 50 €</td><td className="p-4 font-bold text-primary">Gratis</td></tr>
               <tr><td className="p-4">Garantía</td><td className="p-4">24 meses</td><td className="p-4">3–6 meses</td><td className="p-4 font-bold text-primary">24 meses</td></tr>
-              <tr><td className="p-4">Tiempo de entrega</td><td className="p-4">1–3 días</td><td className="p-4">1–2 días</td><td className="p-4 font-bold text-primary">Mismo día</td></tr>
+              <tr><td className="p-4">Tiempo de entrega</td><td className="p-4">1–3 días</td><td className="p-4">1–2 días</td><td className="p-4 font-bold text-primary">Mismo día (PureTech) · 2 días (EcoBoost)</td></tr>
+              <tr><td className="p-4">Bomba de agua incluida (EcoBoost)</td><td className="p-4">No</td><td className="p-4">No</td><td className="p-4 font-bold text-primary">Sí</td></tr>
             </tbody>
           </table>
         </div>

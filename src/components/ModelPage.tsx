@@ -28,7 +28,9 @@ export function ModelPage({ model }: { model: ModelInfo }) {
     },
     {
       q: `¿Cuánto tarda el cambio en mi ${fullName}?`,
-      a: `Entre 4 y 6 horas. Si nos lo dejas por la mañana, lo recoges por la tarde. Servicio de recogida y entrega disponible en Madrid.`,
+      a: model.pillar === "ecoboost"
+        ? `2 días de trabajo. La intervención en motores EcoBoost requiere desmontaje adicional y se incluye la bomba de agua. Te confirmamos día de entrega al cerrar presupuesto.`
+        : `Entre 4 y 6 horas. Si nos lo dejas por la mañana, lo recoges por la tarde. Servicio de recogida y entrega disponible en Madrid.`,
     },
     {
       q: `¿Qué garantía dais sobre el trabajo en el ${fullName}?`,
@@ -81,9 +83,10 @@ export function ModelPage({ model }: { model: ModelInfo }) {
                 {[
                   `Kit Dayco específico para ${fullName}`,
                   "Tensores y rodillos nuevos",
+                  ...(model.pillar === "ecoboost" ? ["Bomba de agua nueva incluida"] : []),
                   "Aceite + filtro homologado",
                   "Garantía 24 meses",
-                  "Entrega el mismo día",
+                  model.pillar === "ecoboost" ? "2 días de trabajo" : "Entrega el mismo día",
                 ].map((b) => (
                   <li key={b} className="flex items-center gap-2.5">
                     <CheckCircle2 className="h-4 w-4 shrink-0 text-primary" />
@@ -134,7 +137,9 @@ export function ModelPage({ model }: { model: ModelInfo }) {
             {[
               `Diagnóstico gratuito específico ${fullName}`,
               "Kit distribución Dayco reforzado (correa + tensores + rodillos)",
-              "Bomba de aceite revisada y sustituida si procede",
+              model.pillar === "ecoboost"
+                ? "Bomba de agua nueva incluida"
+                : "Bomba de aceite revisada y sustituida si procede",
               "Aceite homologado por el fabricante",
               "Filtro de aceite nuevo",
               "Mano de obra de mecánico especialista",
@@ -183,7 +188,7 @@ export function ModelPage({ model }: { model: ModelInfo }) {
             ¿Tienes un <span className="text-primary">{fullName}</span>?
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            Pide tu presupuesto cerrado en 5 minutos. Cambio el mismo día con garantía 24 meses.
+            Pide tu presupuesto cerrado en 5 minutos. {model.pillar === "ecoboost" ? "Entrega en 2 días hábiles con bomba de agua incluida y garantía 24 meses." : "Cambio el mismo día con garantía 24 meses."}
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             <CTAButtons />
@@ -212,7 +217,9 @@ export const modelFaqs = (m: ModelInfo) => {
     },
     {
       q: `¿Cuánto tarda el cambio?`,
-      a: `Entre 4 y 6 horas. Entrega el mismo día. Recogida y entrega disponible en Madrid.`,
+      a: m.pillar === "ecoboost"
+        ? `2 días de trabajo. Incluye bomba de agua. Recogida y entrega disponible en Madrid.`
+        : `Entre 4 y 6 horas. Entrega el mismo día. Recogida y entrega disponible en Madrid.`,
     },
     {
       q: `¿Qué garantía dais?`,

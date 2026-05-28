@@ -29,7 +29,7 @@ const FAQS = [
   },
   {
     q: "¿Cuánto dura el cambio?",
-    a: "Entregamos el coche el mismo día. La intervención completa toma entre 4 y 6 horas según modelo.",
+    a: "En PureTech entregamos el coche el mismo día (4-6 horas). En motores Ford EcoBoost necesitamos 2 días de trabajo porque la intervención es más compleja e incluye la sustitución de la bomba de agua.",
   },
   {
     q: "¿Qué precio tiene en taller especialista?",
@@ -156,6 +156,7 @@ function CorreaSumergida() {
                 "Aceite homologado por fabricante",
                 "Filtro de aceite nuevo",
                 "Diagnóstico de bomba de aceite incluido",
+                "Bomba de agua nueva incluida en servicio EcoBoost",
               ].map((b) => (
                 <li key={b} className="flex items-start gap-2.5">
                   <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-primary" />

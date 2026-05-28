@@ -12,7 +12,7 @@ export const Route = createFileRoute("/ford-fiesta-ecoboost-madrid")({
     return {
       ...buildSeo({
         title: "Cambio Correa Ford Fiesta EcoBoost Madrid | StopCars",
-        description: "Taller especialista en Ford Fiesta EcoBoost 1.0 en Madrid. Cambio de correa de distribución sumergida con kit Dayco reforzado. Presupuesto personalizado. Garantía 24 meses. Entrega el mismo día.",
+        description: "Taller especialista en Ford Fiesta EcoBoost 1.0 en Madrid. Cambio de correa de distribución sumergida con kit Dayco reforzado y bomba de agua incluida. 2 días de trabajo. Garantía 24 meses.",
         path: `/${SLUG}`,
       }),
       scripts: [
