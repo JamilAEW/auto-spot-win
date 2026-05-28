@@ -210,7 +210,7 @@ export const articleBodies: Record<string, () => React.ReactNode> = {
       </p>
       <h2>Cambio en taller especialista</h2>
       <p>
-        En <Link to="/motor-ecoboost">StopCars Madrid</Link> cambiamos correa EcoBoost por <strong>399 €</strong> con kit Dayco reforzado, aceite homologado y garantía 24 meses. Misma calidad y mejor precio que un concesionario.
+        En <Link to="/motor-ecoboost">StopCars Madrid</Link> cambiamos correa EcoBoost bajo presupuesto personalizado, con kit Dayco reforzado, bomba de agua incluida, aceite homologado y garantía 24 meses. Misma calidad y mejor precio que un concesionario.
       </p>
     </>
   ),
