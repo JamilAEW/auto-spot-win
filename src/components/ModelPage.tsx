@@ -77,10 +77,21 @@ export function ModelPage({ model }: { model: ModelInfo }) {
               <p className="font-display text-xs font-bold uppercase tracking-widest text-primary">
                 Cambio correa {fullName}
               </p>
-              <h2 className="mt-2 font-display text-6xl font-black md:text-7xl">
-                399<span className="text-2xl text-primary">,00€</span>
-              </h2>
-              <p className="mt-2 text-sm text-muted-foreground">IVA y mano de obra incluidos</p>
+              {model.pillar === "ecoboost" ? (
+                <>
+                  <h2 className="mt-2 font-display text-5xl font-black md:text-6xl">
+                    Consultar
+                  </h2>
+                  <p className="mt-2 text-sm text-muted-foreground">Presupuesto personalizado según modelo</p>
+                </>
+              ) : (
+                <>
+                  <h2 className="mt-2 font-display text-6xl font-black md:text-7xl">
+                    399<span className="text-2xl text-primary">,00€</span>
+                  </h2>
+                  <p className="mt-2 text-sm text-muted-foreground">IVA y mano de obra incluidos</p>
+                </>
+              )}
               <ul className="mt-5 space-y-2 text-sm">
                 {[
                   `Kit Dayco específico para ${fullName}`,
