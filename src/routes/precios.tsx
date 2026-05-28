@@ -17,8 +17,8 @@ const FAQS = [
 export const Route = createFileRoute("/precios")({
   head: () => ({
     ...buildSeo({
-      title: `Precio Cambio Correa Distribución PureTech / EcoBoost Madrid | ${SITE.name}`,
-      description: "Precio cerrado 399 € para el cambio de correa de distribución sumergida PureTech y EcoBoost en Madrid. IVA, mano de obra, kit Dayco y aceite incluidos.",
+      title: `Precio Cambio Correa Distribución PureTech Madrid | ${SITE.name}`,
+      description: "Precio cerrado 399 € para el cambio de correa de distribución sumergida PureTech en Madrid. EcoBoost bajo presupuesto personalizado. IVA, mano de obra, kit Dayco y aceite incluidos.",
       path: "/precios",
     }),
     scripts: [
@@ -53,8 +53,8 @@ function PreciosPage() {
       <section className="bg-carbon">
         <div className="mx-auto max-w-7xl px-4 py-16 md:px-6 md:py-24">
           <p className="mb-4 inline-block rounded-full border border-primary/40 bg-primary/10 px-4 py-1 text-xs font-bold uppercase tracking-widest text-primary">Precios cerrados</p>
-          <h1 className="font-display text-4xl font-black uppercase md:text-6xl">Precio cambio correa <span className="text-primary">PureTech / EcoBoost</span></h1>
-          <p className="mt-5 max-w-2xl text-lg text-muted-foreground">Sin sorpresas. Presupuesto cerrado por escrito antes de empezar el trabajo.</p>
+          <h1 className="font-display text-4xl font-black uppercase md:text-6xl">Precio cambio correa <span className="text-primary">PureTech</span></h1>
+          <p className="mt-5 max-w-2xl text-lg text-muted-foreground">Sin sorpresas. Presupuesto cerrado por escrito antes de empezar el trabajo. Ford EcoBoost bajo presupuesto personalizado.</p>
         </div>
       </section>
 
@@ -103,7 +103,7 @@ function PreciosPage() {
             </thead>
             <tbody className="divide-y divide-border">
               <tr><td className="p-4">Cambio correa PureTech 1.2</td><td className="p-4">800 – 1.200 €</td><td className="p-4">500 – 700 €</td><td className="p-4 font-bold text-primary">399 €</td></tr>
-              <tr><td className="p-4">Cambio correa EcoBoost 1.0</td><td className="p-4">700 – 1.100 €</td><td className="p-4">450 – 650 €</td><td className="p-4 font-bold text-primary">399 €</td></tr>
+              <tr><td className="p-4">Cambio correa EcoBoost 1.0</td><td className="p-4">700 – 1.100 €</td><td className="p-4">450 – 650 €</td><td className="p-4 font-bold text-primary">Consultar</td></tr>
               <tr><td className="p-4">Diagnóstico previo</td><td className="p-4">50 – 80 €</td><td className="p-4">30 – 50 €</td><td className="p-4 font-bold text-primary">Gratis</td></tr>
               <tr><td className="p-4">Garantía</td><td className="p-4">24 meses</td><td className="p-4">3–6 meses</td><td className="p-4 font-bold text-primary">24 meses</td></tr>
               <tr><td className="p-4">Tiempo de entrega</td><td className="p-4">1–3 días</td><td className="p-4">1–2 días</td><td className="p-4 font-bold text-primary">Mismo día</td></tr>

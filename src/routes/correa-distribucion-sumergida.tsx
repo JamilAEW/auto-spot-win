@@ -33,7 +33,7 @@ const FAQS = [
   },
   {
     q: "¿Qué precio tiene en taller especialista?",
-    a: "399 € en StopCars Madrid con IVA, mano de obra, kit Dayco reforzado, aceite y filtro homologados. Garantía 24 meses incluida.",
+    a: "Desde 399 € para motores PureTech en StopCars Madrid con IVA, mano de obra, kit Dayco reforzado, aceite y filtro homologados. EcoBoost bajo presupuesto personalizado. Garantía 24 meses incluida.",
   },
 ];
 
@@ -42,7 +42,7 @@ export const Route = createFileRoute("/correa-distribucion-sumergida")({
     ...buildSeo({
       title: "Correa de Distribución Sumergida | StopCars Madrid",
       description:
-        "Guía completa sobre la correa de distribución bañada en aceite (wet belt). Modelos afectados PureTech y EcoBoost, riesgos, mantenimiento y cambio en Madrid por 399 €.",
+        "Guía completa sobre la correa de distribución bañada en aceite (wet belt). Modelos afectados PureTech y EcoBoost, riesgos, mantenimiento y cambio en Madrid.",
       path: "/correa-distribucion-sumergida",
     }),
     scripts: [
@@ -51,7 +51,6 @@ export const Route = createFileRoute("/correa-distribucion-sumergida")({
         serviceJsonLd(
           "Cambio de Correa de Distribución Sumergida",
           "Servicio especializado de cambio de correa wet belt para motores PureTech y EcoBoost en Madrid.",
-          "399",
         ),
       ),
       ldScript(
