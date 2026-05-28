@@ -63,7 +63,7 @@ export function ArticleLayout({
               ¿Tienes un coche afectado?
             </p>
             <h3 className="mt-2 font-display text-2xl font-black md:text-3xl">
-              Cambio de correa por <span className="text-primary">399 €</span> en Madrid
+              Cambio de correa por <span className="text-primary">999 €</span> en Madrid
             </h3>
             <p className="mt-3 text-muted-foreground">
               Diagnóstico gratuito · Entrega el mismo día · Garantía 24 meses

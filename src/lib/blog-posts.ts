@@ -57,7 +57,7 @@ export const BLOG_POSTS: BlogPost[] = [
     description:
       "Cuánto cuesta cambiar la correa de distribución PureTech en Madrid: desglose por modelo, comparativa concesionario vs taller especialista.",
     excerpt:
-      "Precios reales 2026 del cambio de correa sumergida PureTech: desde 399 € en taller especialista hasta 1.200 € en concesionario.",
+      "Precios reales 2026 del cambio de correa sumergida PureTech: desde 999 € en taller especialista hasta 1.200 € en concesionario.",
     category: "PureTech",
     pillar: "/motor-puretech",
     datePublished: "2026-02-12",

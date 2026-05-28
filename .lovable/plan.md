@@ -8,7 +8,7 @@ Construimos el sitio completo descrito en tu brief, con identidad visual StopCar
 - **Paleta**: fondo negro `#0A0A0A`, superficies `#141414`, amarillo señal `#FFD400` (acento principal), naranja `#E8700A` solo para CTAs de urgencia ("Presupuesto en 5 min", "Llamar ahora"), verde WhatsApp `#25D366`, blanco texto, rojo alerta `#CC2200`.
 - **Tipografía**: Google Fonts — **Outfit** (titulares bold/black, mayúsculas estilo flyer) + **Inter** (cuerpo).
 - **Logo StopCars**: extraído de los flyers que subiste; usado en header, footer y favicon.
-- **Imágenes**: flyers reutilizados como creatividades (hero promo 399 €, sección "Por qué importante", "Mejor opción"). Generamos imágenes complementarias (taller, motor PureTech, correa sumergida, kit Dayco) con IA al estilo de tus flyers.
+- **Imágenes**: flyers reutilizados como creatividades (hero promo 999 €, sección "Por qué importante", "Mejor opción"). Generamos imágenes complementarias (taller, motor PureTech, correa sumergida, kit Dayco) con IA al estilo de tus flyers.
 
 ## Datos del negocio (de los flyers)
 
@@ -54,7 +54,7 @@ Cada ruta tendrá su propio `<head>`: title, description, canonical, og:title/de
 ## Plan de ejecución
 
 1. **Fundamentos**: tema (negro/amarillo), tipografía Outfit+Inter, logo extraído, layout root (header/footer/WhatsApp/breadcrumbs), helpers SEO (`<Head>` por ruta, sitemap, robots), formulario + email.
-2. **Home**: hero promo 399 €, urgencia, modelos afectados (grid con logos marca), proceso, garantía, FAQ, mapa, formulario, schema AutoRepair + FAQ.
+2. **Home**: hero promo 999 €, urgencia, modelos afectados (grid con logos marca), proceso, garantía, FAQ, mapa, formulario, schema AutoRepair + FAQ.
 3. **Pilares** PureTech, EcoBoost y wet-belt genérico (contenido completo, tablas, FAQ, schema Service + FAQ).
 4. **13 páginas de modelo** generadas con plantilla del brief, contenido específico por modelo (motor, años afectados, síntomas, precio).
 5. **Blog**: índice + 10 artículos largos con schema Article y enlaces internos al pilar correspondiente.
